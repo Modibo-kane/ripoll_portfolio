@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1F2235;
+    --secondary-color: #F24B59;
+    --text-color: #ffffff;
+    --another-color: #13141e;
+}
+
+.text-rouge{
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    /* border-top: 2px solid var(--secondary-color); */
+    margin-top: 4rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer Section ---------------------------------------------- */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    /* padding-bottom: 2rem; */
+    margin-bottom: 1rem;
+    /* border-bottom: 1px solid #4A4C5F; Une couleur intermédiaire */
+}
+
+.footer-tagline {
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 0.75rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    color: #b0b2c3; /* Un blanc plus doux */
+    position: relative;
+    padding-left: 25px;
+}
+
+.footer-tagline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: translateY(-50%);
+}
+
+.footer-links {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 1rem; */
+    
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--secondary-color);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #8E8F9A; /* Texte légèrement estompé */
+    padding-bottom: 1rem;
+}
+
+.newsletter-form {
+    position: relative;
+    display: flex;
+    max-width: 300px;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 0.75rem 3.5rem 0.75rem 1rem;
+    border: 2px solid #4A4C5F;
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--text-color);
+    transition: border-color 0.3s;
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.newsletter-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.footer-separator {
+    width: 2px; /* Épaisseur du séparateur */
+    background-color: #4A4C5F; /* Couleur intermédiaire discrète */
+    align-self: stretch; /* S'étire sur toute la hauteur du conteneur flex */
+}
+
+/* Footer Section end  ---------------------------------------------- */
+
+/* acceuil ---------------------------------------------- */
+.accueil{
+    background-color: var(--another-color);
+}
+
+.circle-icon {
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.circle-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.circle-icon > .fa-solid{
+    color: white;
+    font-size: 24px;
+    /* line-height: 50px; */
+    text-align: center;
+}
+
+.nuageCouleur{
+    position: relative;
+    margin-left: 6rem;
+}
+
+.nuageCouleur::after{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle at center, rgba(242, 75, 89, 0.782), transparent 70%);
+    filter: blur(20px);
+    z-index: 0;
+    transform: perspective(500px) rotateY(30deg);
+}
+
+.nuageCouleur::before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -30%;
+    width: 82%;
+    height: 80%;
+    background: radial-gradient(circle at center, rgba(242, 75, 89, 0.782), transparent 70%);
+    filter: blur(20px);
+    z-index: 0;
+    transform: perspective(500px) rotateY(-25deg);
+}
+
+.imageFontFlou{
+    /* filter: blur(2px); */
+    border-bottom: rgba(242, 75, 89, 0.782) 2px solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageFontFlou > img {
+    z-index: 4;
+}
+
+
+/* acceuil end ---------------------------------------------- */
+
+/* 404 page ---------------------------------------------- */
+.error-section {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--another-color);
+    position: relative;
+}
+
+.error-title {
+    font-size: 10rem;
+    font-weight: bold;
+    color: var(--text-color);
+    position: relative;
+    z-index: 2;
+}
+
+.error-title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, var(--secondary-color) 10%, transparent 60%);
+    filter: blur(50px);
+    z-index: -1;
+}
+
+/* 404 page end ---------------------------------------------- */
+
+
+/*propriétét tailwind qui ne reponde pas */
+.mt-6{
+    margin-top: 1.5rem;
+}
+
+.px-6 {
+    padding-inline: 1.5rem;
+} 
+
+.py-3{
+    padding-block: 0.75rem;
+}
+.pt-4{
+    padding-top: 1rem;
+} .pb-4{
+    padding-bottom: 1rem;
+}
+.pl-8{
+    padding-left: 2rem;
+}
+.px-8{
+    padding-inline: 8rem;
+}
+
+.p-4{
+    padding: 1rem;
+}
+
+.px-4{
+    padding-inline: 1rem
+}
+
+.px-4:hover{
+    color: var(--secondary-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mt-12{
+    margin-top: 3rem;
+}
+
+.mb-8{
+    margin-bottom: 2rem;
+}
+
+.mb-2{
+    margin-bottom: 0.5rem;
+}
+
+.pl-8{
+    padding-left: 2rem;
+}
+
+.p-6{
+    padding: 1.5rem;
+}
+
+.gap-4{
+    gap: 1rem;
+}
+
+.mb-4{
+    margin-bottom: 1rem;
+}
+
+.mt-2{
+    margin-top: 0.5rem;
+}

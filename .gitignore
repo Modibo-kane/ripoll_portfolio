@@ -1,0 +1,17 @@
+# Dépendances Node.js (TRÈS IMPORTANT)
+/node_modules
+/package-lock.json
+
+# Fichiers de compilation/cache de Tailwind
+/src/output.css.map
+.cache/
+
+# Configuration IDE (VS Code)
+.vscode/
+
+# Fichiers de configuration de l'OS
+.DS_Store
+Thumbs.db
+
+# Fichiers de logs et temporaires PHP (si vous en utilisez)
+*.log
