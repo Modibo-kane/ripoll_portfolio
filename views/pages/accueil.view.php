@@ -1,11 +1,11 @@
 <div class=" accueil">
-    <div class="enfant w-1/2 ">
+    <div class="accueil-image-wrapper">
         <div class="imgContenaire">
             <img src="../../assets/image/mannequinRemovebg.png" alt="Darcia Ripoll">
         </div>
     </div>
-    <div class="enfant2 w-1/2">
-            <div class="about">
+    <div class="accueil-content">
+            <div class="about-badge">
                 About Me
             </div>
             <div class="description">
@@ -33,19 +33,19 @@
     </div>
 </div>
 <?php if ($active_section === 'skills'): ?>
-    <section id="skills" class="skills min-h-screen w-full">
+    <section id="skills" class="skills section-full">
         <?php include 'views/includes/skills.php'; ?>
     </section>
 <?php endif; ?>
 
 <?php if ($active_section === 'services'): ?>
-    <section id="services" class="services min-h-screen w-full" >
+    <section id="services" class="services section-full" >
         <?php include 'views/includes/services.php'; ?>
     </section>
 <?php endif; ?>
 
 <?php if ($active_section === 'projects'): ?>
-    <section id="projects" class="projects min-h-screen w-full">
+    <section id="projects" class="projects section-full">
         <?php include 'views/includes/projects.php'; ?>
     </section>
 <?php endif; ?>
