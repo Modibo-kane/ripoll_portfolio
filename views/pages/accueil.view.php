@@ -1,60 +1,51 @@
-<div class="min-h-screen flex justify-center items-center accueil">
-    <div class="h-1/2 w-1/2 flex flex-col items-center justify-center">
-        <div class="h-1/2 w-full flex flex-col items-center justify-center px-8">
-            <div class="w-full mb-8">
-                <nav>
-                    <ul class="flex gap-6 justify-start items-center">
-                        <li class=" font-bold" >
-                            <div class="circle-icon flex  justify-center items-center" >
-                              <a href="" class="text-center hover:text-gray-50">
-                                <i class="fa-brands text-2xl fa-facebook-f"></i>
-                              </a>
-                            </div> 
-                        </li>
-                        <li class=" font-bold" >
-                            <div class="circle-icon flex  justify-center items-center" > 
-                                <a href="" class="text-center ">
-                                  <i class="fa-brands text-2xl fa-instagram"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <li class=" font-bold" >
-                          <div class="circle-icon flex  justify-center items-center" > 
-                              <a href="" class="text-center">
-                                <i class="fa-brands text-2xl fa-twitter"></i>
-                              </a>
-                            </div>
-                        </li>
-                        <li class="font-bold" >
-                            <div class="circle-icon flex  justify-center items-center">
-                                <a href="" class="text-center">
-                                  <i class="fa-brands  fa-linkedin-in text-2xl"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-              </nav>
+<div class=" accueil">
+    <div class="enfant w-1/2 ">
+        <div class="imgContenaire">
+            <img src="../../assets/image/mannequinRemovebg.png" alt="Darcia Ripoll">
+        </div>
+    </div>
+    <div class="enfant2 w-1/2">
+            <div class="about">
+                About Me
             </div>
-            
-            <div class="w-full flex flex-col items-start text-left">
-                <span class="font-bold text-5xl mb-2"> I am Ripoll Darcia </span>
-                <span class="font-bold text-lg text-gray-100">
-                  I am a Social Media Manager & Digital Marketer 
-                </span>
+            <div class="description">
+                Get a Web Service that will make a 
+                lasting impression on your audience!!!
             </div>
-            <div class="w-full flex flex-col items-start text-left">
-                <div class="mt-6">
-                    <a href="index.php?page=contact" class="bg-rouge text-white px-6 py-3 border-2 border-red-500 rounded-full font-semibold hover:bg-red-500 transition duration-300">
-                        Contactez-moi
-                    </a>
+            <div class="rectangleInfos">
+                <div class="info">
+                    <span class="label">Name:</span> <br> <span class="value"> Darcia Ripoll</span>
+                </div>
+                <div class="info">
+                    <span class="label">Email:</span> <br> <span class="value">darcia@example.com</span>
+                </div>
+                <div class="info">
+                    <span class="label">Phone:</span> <br> <span class="value">+242 00 000 00 00</span>
+                </div>
+                <div class="info">
+                    <span class="label">Location:</span> <br> <span class="value">Brazzaville, Congo</span>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="h-full w-1/2 nuageCouleur ">
-        <div class=" w-1/2 h-1/3 rounded-full  imageFontFlou">
-            <img src="../../assets/image/mannequin.png" alt="img" class="full w-full object-cover">
-        </div>
+            <div class="btnCont">
+                <a href="index.php?page=contact" class="btnContact">Contact Me</a>
+                <a href="../../assets/docs/Darcia_Ripoll_CV.pdf" class="btnDownload" download>Download CV</a>
+            </div>
     </div>
 </div>
+<?php if ($active_section === 'skills'): ?>
+    <section id="skills" class="skills min-h-screen w-full">
+        <?php include 'views/includes/skills.php'; ?>
+    </section>
+<?php endif; ?>
+
+<?php if ($active_section === 'services'): ?>
+    <section id="services" class="services min-h-screen w-full" >
+        <?php include 'views/includes/services.php'; ?>
+    </section>
+<?php endif; ?>
+
+<?php if ($active_section === 'projects'): ?>
+    <section id="projects" class="projects min-h-screen w-full">
+        <?php include 'views/includes/projects.php'; ?>
+    </section>
+<?php endif; ?>
