@@ -30,4 +30,20 @@
                 </div>
             </div>
         </nav>
+        <div class="navResponsive">
+            <div class="nav-brand">  
+                    <span class="rp"> RP </span> <span class="text-rouge brand-name">Darcia</span>
+            </div>
+            <i class="fa-solid fa-bars fa-xl" id="faBar"></i>
+        </div>
+        <div class="nav-links-reponsive-cont" id="mobile-menu" >
+            <div class="nav-links-reponsive">
+                <a class=" px-4 " href="index.php?page=accueil">Accueille</a>
+                <a class=" px-4 " href="index.php?page=services#services">Service</a> 
+                <a class=" px-4 " href="index.php?page=skills#skills">Skills</a> 
+                <a class=" px-4 " href="index.php?page=projects#projects">Projet</a> 
+                <a class=" px-4 " href="index.php?page=contact">Contact</a>  
+            </div>
+            <div class="videResponsive" id="out"></div>
+        </div>
     </header>

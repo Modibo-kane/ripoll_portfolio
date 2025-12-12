@@ -466,6 +466,11 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #1a202c; /* text-gray-900 */
+    /* position: ; */
+}
+
+.navResponsive{
+    display: none;
 }
 
 .main-nav {
@@ -504,6 +509,49 @@ body {
     gap: 1.5rem; /* gap-x-6 */
     font-size: 1rem; /* text-base */
     font-weight: 600; /* font-semibold */
+}
+
+.nav-links-reponsive-cont{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    }
+
+.nav-links-reponsive{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    width: 40%;
+    height: 100%;
+    background-color: var(--primary-color);
+    padding-inline: 2rem;
+    padding-top: 2rem;
+    animation: sladIn 0.5s ease-in;
+    border-right: solid 5px var(--secondary-color);
+}
+
+@keyframes sladIn {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
+.videResponsive{
+    height: 100%;
+    width: 60%;
+    background-color: transparent;
 }
 
 

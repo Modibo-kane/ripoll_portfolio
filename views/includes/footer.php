@@ -39,6 +39,7 @@
             <p>&copy; <?php echo date("Y"); ?> Ripoll. Tous droits réservés.</p>
         </div>
     </div>
+    <script src="../../assets/js/main.js"></script>
 </footer>
 </body>
 </html>

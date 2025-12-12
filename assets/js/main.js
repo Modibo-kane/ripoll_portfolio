@@ -1,6 +1,11 @@
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
-});
+window.addEventListener("load", ()=>{
+    const faBar = document.getElementById('faBar');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const sortir= document.getElementById('out')
+    faBar.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+    });
+    sortir.addEventListener('click', ()=>{
+        mobileMenu.classList.toggle('open');
+    })
+})
