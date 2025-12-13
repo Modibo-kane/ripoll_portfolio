@@ -1,1 +1,0 @@
-# ripoll_portfolio
