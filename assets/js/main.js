@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
     sortir.addEventListener('click', ()=>{
         mobileMenu.classList.toggle('open');
+        
     })
 
 
@@ -15,13 +16,21 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const sortirContact = document.getElementById('fermeContact') // element1 pour sortir
     const talks = document.querySelectorAll('.talk') // déclencheurs
 
+    const body = document.body;
+
     talks.forEach(talk => {
-      talk.addEventListener('click', () => contactCont.classList.add("open"));
+      talk.addEventListener('click', (e) => {
+        e.stopPropagation();
+        body.classList.add("no-scroll");
+        contactCont.classList.add("open")
+      });
+      
     });
 
     sortirContact.addEventListener('click', () => {
       mobileMenu.classList.remove('open')
       contactCont.classList.remove("open")
+      body.classList.add("no-scroll");
     });
 
   })

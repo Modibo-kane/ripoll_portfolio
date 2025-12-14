@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
         // let fullMessage = `Nom: ${nom}\n Message: ${message}`
         let fullMessage = 
-        `Nom: ${nom}\n\n` +  // Double saut de ligne ici (\n\n) est plus fiable
-        `Message: ${message}`;
+        `Nom:  ${nom}\n` +  // Double saut de ligne ici (\n\n) est plus fiable
+        `Message: \n ${message}`;
 
         const encodedMessage = encodeURIComponent(fullMessage)
 

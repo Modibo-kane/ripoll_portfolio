@@ -37,10 +37,10 @@
         </div>
         <div class="nav-links-reponsive-cont" id="mobile-menu" >
             <div class="nav-links-reponsive">
-                <a class=" px-4 " href="index.php?page=accueil">Home <i class="fa-solid fa-angle-right"></i></a>
-                <a class=" px-4 " href="index.php?page=services#services">Service <i class="fa-solid fa-angle-right"></i></a> 
-                <a class=" px-4 " href="index.php?page=skills#skills">Skills <i class="fa-solid fa-angle-right"></i></a> 
-                <a class=" px-4 " href="index.php?page=projects#projects">Projet <i class="fa-solid fa-angle-right"></i></a> 
+                <a class=" px-4 " href="#accueil">Home <i class="fa-solid fa-angle-right"></i></a>
+                <a class=" px-4 " href="#services">Service <i class="fa-solid fa-angle-right"></i></a> 
+                <a class=" px-4 " href="#skills">Skills <i class="fa-solid fa-angle-right"></i></a> 
+                <a class=" px-4 " href="#projects">Projet <i class="fa-solid fa-angle-right"></i></a> 
                 <div class="nav-action">
                     <span class="talk px-4">Contact <i class="fa-solid fa-angle-right"></i></span>
                 </div>  
@@ -76,7 +76,21 @@
                 </div>
                 <div class="btnCont">
                     <span class="btnContact talk">Contactez-moi</span>
-                    <span class="btnDownload" download>Download CV</span>
+                    <span class="btnDownload" id="downloadTrigger">Download CV</span>
+                    <div class="download-menu" id="downloadMenu">
+                            <div class="download-menu-element">
+                                <a href="assets/docs/cv.pdf"  class="download-option" id="downloadPDF" target="_blank">
+                                    <span> Télécharger en PDF </span> <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <a href="assets/image/cv.jpg"  class="download-option" id="downloadPDF" target="_blank">
+                                    <span> Télécharger en Image (JPG) </span> <i class="fa-solid fa-angle-right" ></i>
+                                </a>
+                                <a href="assets/docs/cv.docx"  class="download-option" id="downloadPDF" target="_blank">
+                                    <span> Télécharger en Word (docx) </span> <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <button type="click" id="downloadSortir" class="downloadSortir">sortir</button>
+                            </div>
+                    </div>
                 </div>
         </div>
     </div>
@@ -402,5 +416,6 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/project-hover.js"></script>
 <script src="assets/js/whatsappGenerator.js"></script>
+<script src="assets/js/telechargemenCv.js"></script>
 </body>
 </html>
