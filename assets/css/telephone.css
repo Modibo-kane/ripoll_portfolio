@@ -133,7 +133,7 @@
     }
     
     .serviceImage > img {
-        height: 350px;
+        height: 250px;
     }
     
     /* 1. Configuration du conteneur de défilement (mobile-scroll-container) */
@@ -195,7 +195,7 @@
     .skillBox {
         flex-shrink: 0;
         flex-basis: 65vw;
-        height: 200px;
+        height: 250px;
         padding: 1rem;
         margin-bottom: 1rem;
         display: flex;

@@ -8,6 +8,10 @@
     
 }
 
+h2{
+    text-align: center;
+}
+
 :root {
     --primary-color: #1F2235;
     --secondary-color: #F24B59;
@@ -291,6 +295,7 @@ ul{
         justify-content: center;
         padding-inline: 4rem;
         background-color: var(--another-color);
+        padding-block: 2rem;
     }
 
     .skillTitle{
@@ -344,10 +349,15 @@ ul{
     }
 
     .xd{
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
         object-fit: contain;
         margin-bottom: 1rem;
+    }
+
+    .xd-plus{
+        width: 8rem;
+        height: 8rem;
     }
 
     .progressBare{
@@ -490,6 +500,7 @@ ul{
         flex-direction: column;
         justify-content: center;
         padding-inline: 4rem;
+        padding-block: 2rem;
     }
 
     .serviceTitle{
@@ -541,7 +552,7 @@ ul{
 
     .serviceImage > img{
         width: 100%;
-        height: 100%;
+        height: 250px;
         object-fit: cover;
         border-radius: 1rem;
     }
