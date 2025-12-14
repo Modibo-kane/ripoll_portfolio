@@ -168,8 +168,8 @@ ul{
 .btnContact{
     background-color: var(--secondary-color);
     color: var(--text-color);
-    padding: 0.7rem 2rem;
-    border-radius: 9999px; /* Fully rounded */
+    padding: 0.7rem 1.1rem;
+    border-radius: 9px; /* Fully rounded */
     font-weight: 600;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -185,8 +185,8 @@ ul{
 .btnDownload{
     background-color: transparent;
     color: var(--secondary-color);
-    padding: 0.55rem 2rem;
-    border-radius: 9999px; /* Fully rounded */
+    padding: 0.55rem 1.5rem;
+    border-radius: 0.8rem; 
     font-weight: 600;
     transition: background-color 0.3s, color 0.3s;
     border: solid 2px var(--text-color);
@@ -292,13 +292,36 @@ ul{
 
 /* projects ----------------------------------------------------------- */
 
+    .projetBoxTitre{
+        color: #060606;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding-inline: 0.8rem;
+        padding-block: 0.6rem;
+        background-color: #343c4c;
+        border-left: solid 4px var(--secondary-color);
+        margin-top: 2rem;
+    }
+    
+    .btnContProjet{
+        margin-top: 0rem;
+        /* border: solid 2px var(--secondary-color); */
+        width: fit-content;
+        /* height: auto; */
+        padding: 1rem;
+        /* display: none; */
+    }
+
     .projetCont{
         display: flex;
         gap: 2rem;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        padding-block: 3rem;
         padding-inline: 4rem;
+        height: auto;
         background-color: var(--another-color);
     }
 
@@ -306,7 +329,7 @@ ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         width: 100%;
     }
 
@@ -325,7 +348,7 @@ ul{
     }
 
     .projetTitle{
-        font-size: 2rem;
+        font-size: 4rem;
         font-weight: bolder;
     }
 
@@ -400,8 +423,9 @@ ul{
     }
 
     .serviceTitle{
-        font-size: 2rem;
+        font-size: 4rem;
         font-weight: bold;
+        margin-bottom:2rem;
     }
     .spanService{
         color: var(--secondary-color);
@@ -623,7 +647,7 @@ ul{
     width: 40%;
     height: 100%;
     background-color: var(--primary-color);
-    padding-inline: 2rem;
+    padding-inline: 0.5rem;
     padding-top: 2rem;
     animation: sladIn 0.5s ease-in;
     border-right: solid 5px var(--secondary-color);
@@ -638,29 +662,38 @@ ul{
     }
 }
 
+@keyframes sladInRight {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
 .videResponsive{
     height: 100%;
     width: 60%;
-    background-color: transparent;
+    background-color: rgba(1, 1, 1, 0.5);
+    animation: sladInRight 0.5s ease-in;
 }
 
 
-.talk{
+/* .talk{
     background-color: var(--secondary-color);
     color: var(--text-color);
     padding: 0.5rem 1rem;   
-    border-radius: 9999px; /* Fully rounded */
-    font-weight: 600;
-    /* transition: background-color 0.3s; */
+    border-radius: 9999px; 
+    transition: background-color 0.3s;
     transition: all 0.3s;
 }
 .talk:hover{
-    transform: scale(1.5);
-    background-color: #fbfbfb; /* Darker red on hover */
+    transform: scale(1.5); 
+    background-color: #fbfbfb; 
     cursor: pointer;
     border: solid 2px var(--secondary-color);
-    color: var(--secondary-color);
-}
+    color: var(--secondary-color); 
+} */
 
 .rp{
     /* display: flex; */
@@ -685,6 +718,11 @@ ul{
     cursor: pointer;
 }
 
+.px-4:active{
+    background-color: #d9404c;
+    color: #fff;
+}
+
 
 /* header end ------------------------------------------------------------ */
 
@@ -707,6 +745,15 @@ ul{
     align-items: center; 
 }
 
+.nav-brandContact {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem; /* text-xl */
+}
+
 .contact.open{
   display: flex;
 }
@@ -714,9 +761,10 @@ ul{
 
 #fermeContact{
   position: absolute;
-  top: 7rem;
-  right: 6rem;
   cursor: pointer;
+  color: var(--text-color);
+  top: 8rem;
+  right: 8rem;
 }
 
 .whatsApp{
@@ -815,7 +863,7 @@ ul{
   }
 }
 
-#submitButton{
+.submitButton{
   /* margin-top: 1rem; */
   padding-block: 0.4rem;
   padding-inline: 4rem;

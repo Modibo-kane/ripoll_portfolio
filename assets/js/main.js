@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
       talk.addEventListener('click', () => contactCont.classList.add("open"));
     });
 
-    sortirContact.addEventListener('click', () => contactCont.classList.remove("open"));
+    sortirContact.addEventListener('click', () => {
+      mobileMenu.classList.remove('open')
+      contactCont.classList.remove("open")
+    });
 
   })

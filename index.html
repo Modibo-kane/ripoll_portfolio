@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/miniOrdi.css">
+    <link rel="stylesheet" href="assets/css/largeOdri.css">
+    <link rel="stylesheet" href="assets/css/tablettes.css">
+    <link rel="stylesheet" href="assets/css/telephone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title> Accueil | Ripoll Darcia - SMM</title>
 </head>
@@ -22,7 +25,7 @@
                     <a class=" px-4 " href="#projects">Projet</a> 
                 </div>
                 <div class="nav-action">
-                    <span class="talk">Let's talk</span>
+                    <span class=" btnContact talk ">Contactez-moi</span>
                 </div>
             </div>
         </nav>
@@ -34,13 +37,12 @@
         </div>
         <div class="nav-links-reponsive-cont" id="mobile-menu" >
             <div class="nav-links-reponsive">
-                <a class=" px-4 " href="index.php?page=accueil">Accueille</a>
-                <a class=" px-4 " href="index.php?page=services#services">Service</a> 
-                <a class=" px-4 " href="index.php?page=skills#skills">Skills</a> 
-                <a class=" px-4 " href="index.php?page=projects#projects">Projet</a> 
-                <a class=" px-4 " href="index.php?page=contact">Contact</a>
+                <a class=" px-4 " href="index.php?page=accueil">Home <i class="fa-solid fa-angle-right"></i></a>
+                <a class=" px-4 " href="index.php?page=services#services">Service <i class="fa-solid fa-angle-right"></i></a> 
+                <a class=" px-4 " href="index.php?page=skills#skills">Skills <i class="fa-solid fa-angle-right"></i></a> 
+                <a class=" px-4 " href="index.php?page=projects#projects">Projet <i class="fa-solid fa-angle-right"></i></a> 
                 <div class="nav-action">
-                    <span class="talk">Let's talk</span>
+                    <span class="talk px-4">Contact <i class="fa-solid fa-angle-right"></i></span>
                 </div>  
             </div>
             <div class="videResponsive" id="out"></div>
@@ -50,13 +52,10 @@
     <div class=" accueil">
         <div class="accueil-image-wrapper">
             <div class="imgContenaire">
-                <img src="assets/image/mannequinRemovebg.png" alt="Darcia Ripoll">
+                <img src="assets/image/ripoll.png" alt="Darcia Ripoll">
             </div>
         </div>
         <div class="accueil-content">
-                <div class="about-badge">
-                    About Me
-                </div>
                 <div class="description">
                     Get a Web Service that will make a 
                     lasting impression on your audience!!!
@@ -76,8 +75,8 @@
                     </div>
                 </div>
                 <div class="btnCont">
-                    <span class="btnContact talk">Contact Me</span>
-                    <a href="assets/docs/Darcia_Ripoll_CV.pdf" class="btnDownload" download>Download CV</a>
+                    <span class="btnContact talk">Contactez-moi</span>
+                    <span class="btnDownload" download>Download CV</span>
                 </div>
         </div>
     </div>
@@ -89,68 +88,111 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
           Eveniet dolor minus nostrum quaerat rem quo accusantium incidunt, 
         </div>
-
+        
+        <span class="projetBoxTitre">Mamy-Délices, patisserie-glacier (Bamako)</span>
         <div class="mobile-scroll-container">
-            <div class="projetsGrid scroll-wrapper">
-                <div class="projetBox">
-                    <img src="assets/image/p1.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 1</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
+                <div class="projetsGrid scroll-wrapper ">
+                        <div class="projetBox">
+                            <img src="assets/image/mamydelice (1).jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 1</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/mamydelice (2).jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 2</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/mamydelice (3).jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 3</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/mamydelice (4).jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 4</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
                 </div>
-                <div class="projetBox">
-                    <img src="assets/image/p2.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 2</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
+        </div>
+        <span class="projetBoxTitre">LeMarchand, Supermarché (Bamako) </span>
+        <div class="mobile-scroll-container">
+                <div class="projetsGrid scroll-wrapper ">
+                        <div class="projetBox">
+                            <img src="assets/image/lemarchand_1.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 1</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/lemarchand_2.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 2</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/lemarchand_3.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 3</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/lemarchand_4.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 4</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
                 </div>
-                <div class="projetBox">
-                    <img src="assets/image/p3.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 3</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
+        </div>
+
+         <span class="projetBoxTitre">Agence DFA-Communication (Bamako) </span>
+        <div class="mobile-scroll-container">
+                <div class="projetsGrid scroll-wrapper ">
+                        <div class="projetBox">
+                            <img src="assets/image/dfa1.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 1</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/dfa2.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 2</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/dfa3.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 3</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
+                        <div class="projetBox">
+                            <img src="assets/image/dfa4.jpeg" alt="img">
+                            <div class="projetHoverContent">
+                                <h3 class="projetName">Titre du Projet 4</h3>
+                                <a href="#" class="projetButton">Je veux le mm </a>
+                            </div>
+                        </div>
                 </div>
-                <div class="projetBox">
-                    <img src="assets/image/p4.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 4</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
-                </div>
-                <div class="projetBox">
-                    <img src="assets/image/p5.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 5</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
-                </div>
-                <div class="projetBox">
-                    <img src="assets/image/p6.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 6</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
-                </div>
-                <div class="projetBox">
-                    <img src="assets/image/p7.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 7</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
-                </div>
-                <div class="projetBox">
-                    <img src="assets/image/p8.jpeg" alt="img">
-                    <div class="projetHoverContent">
-                        <h3 class="projetName">Titre du Projet 8</h3>
-                        <a href="#" class="projetButton">Je veux le mm </a>
-                    </div>
-                </div>
-                
-            </div>
-            </div>
+        </div>
+
+        <div class="btnContProjet">
+            <span class="btnContact talk">Contactez-moi</span>
+        </div>
     </div>
 
     <div class="serviceCont">
@@ -199,7 +241,9 @@
                   </div>
                 </div>
           </div>
-          <div class="seeMore">See More</div>
+          <div class="btnContProjet">
+                <span class="btnContact talk">Contactez-moi</span>
+          </div>
     </div>
 
     <div class="skillCont">
@@ -252,6 +296,9 @@
                 </div>
             </div>
         </div>
+        <div class="btnContProjet">
+            <span class="btnContact talk">Contactez-moi</span>
+        </div>
     </div>
 
     <footer class="footer-section">
@@ -273,10 +320,9 @@
             <div class="footer-social">
                 <h4 class="footer-heading">Suivez-nous</h4>
                 <div class="social-icons-container">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon talk"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-separator"></div>
@@ -298,7 +344,13 @@
     </footer>
 
     <div class="contact" id="contactCont">
-          <i class="fa-solid fa-xmark fa-2xl " id="fermeContact"></i>
+             <div class="navResponsiveContact">
+                <div class="nav-brandContact">  
+                        <span class="rp"> RP </span> <span class="text-rouge brand-name">Darcia</span>
+                </div>
+                <i class="fa-solid fa-xmark fa-2xl " id="fermeContact"></i>
+            </div>   
+          
           <div class="reseaux">
               <h1>Contactez-moi</h1>
               <p>N'hésitez pas à me joindre directement via mes réseaux ou via le formulaire ci-dessous pour une demande de devis rapide.</p>
@@ -338,19 +390,17 @@
                     <div class="formBox">
                         <label for="message">Message:</label> <br>
                         <textarea id="message" name="message" rows="4" required placeholder="Ex: Je souhaite un devis pour la gestion de votre compte Instagram."></textarea>
-                
                     </div>
-                    <button type="submit" id="submitButton">Générer le Message WhatsApp</button>
+                    <button type="submit" id="submitButton" class="submitButton">Envoyer</button>
                 </form>
 
-                <a id="whatsappLink" href="#" target="_blank" class="whatsapp-link-btn"style="display:none;" >
-                     Ouvrir WhatsApp pour Finaliser l'Envoi
-                </a>
+                <a id="whatsappLink" href="#" target="_blank" class="whatsapp-link-btn"style="display:none;"></a>
 
           </div>
     </div>
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/project-hover.js"></script>
+<script src="assets/js/whatsappGenerator.js"></script>
 </body>
 </html>
