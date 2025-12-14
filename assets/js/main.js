@@ -2,9 +2,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const faBar = document.getElementById('faBar');
     const mobileMenu = document.getElementById('mobile-menu');
     const sortir= document.getElementById('out')
+    const liens = document.querySelectorAll('.px-4')
+
     faBar.addEventListener('click', () => {
         mobileMenu.classList.toggle('open');
     });
+    
+    liens.forEach(lien => {
+          lien.addEventListener('click', ()=>{
+            mobileMenu.classList.toggle('open');
+            
+        })
+    });
+
     sortir.addEventListener('click', ()=>{
         mobileMenu.classList.toggle('open');
         
