@@ -9,12 +9,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
     
     liens.forEach(lien => {
-          lien.addEventListener('click', ()=>{
-            if(mobileMenu.classList.('open'){
-              mobileMenu.classList.remove('open');
-            };)
-            
-        })
+      lien.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('open')) {
+          mobileMenu.classList.remove('open');
+        }
+      });
     });
 
     sortir.addEventListener('click', ()=>{
