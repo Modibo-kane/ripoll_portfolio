@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
     liens.forEach(lien => {
           lien.addEventListener('click', ()=>{
-            mobileMenu.classList.toggle('open');
+            if(mobileMenu.classList.('open'){
+              mobileMenu.classList.remove('open');
+            };)
             
         })
     });
