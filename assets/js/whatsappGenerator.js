@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const form = document.getElementById('contactForm');
     const whatsappLink = document.getElementById('whatsappLink')
     
-    const WHATSAPP_NUMBER = '221706425477';
+    const WHATSAPP_NUMBER = '242067869231';
 
     form.addEventListener("submit", (e)=>{
         e.preventDefault();
