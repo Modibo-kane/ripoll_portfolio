@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Section Projets
         updateContent('projetTitrePrincipal', data.project_title);
-        updateContent('span-projets', data.project_subtitle);
+        updateContent('project_subtitle', data.project_subtitle);
         updateContent('projetDescription', data.project_description, true);
         updateContent('projetTitreSecondaire1', data.client1_title);
         updateContent('projetTitreSecondaireMarchand', data.client2_title);
