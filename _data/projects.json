@@ -75,6 +75,12 @@
           "button_text": "Je veux le même",
           "button_link": "#",
           "image": "/assets/image/dfa7.jpeg"
+        },
+        {
+          "name": "Nom du projet",
+          "button_text": "Je veux le même",
+          "button_link": "#",
+          "image": "/assets/image/dfa3.jpeg"
         }
       ]
     }
