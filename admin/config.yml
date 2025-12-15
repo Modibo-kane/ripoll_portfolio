@@ -8,6 +8,18 @@ backend:
 publish_mode: editorial_workflow
 
 # ----------------------------------------------------------------------
+# NOUVELLE CONFIGURATION REQUISE POUR LES IMAGES
+# ----------------------------------------------------------------------
+# 1. Où les fichiers seront stockés dans votre dépôt
+media_folder: "assets/image" 
+
+# 2. Le chemin public utilisé dans le code HTML (avec un slash initial)
+public_folder: "/assets/image"
+
+# 3. La bibliothèque de médias (pour corriger l'erreur 'media_library')
+media_library:
+  name: netlify-cms-media-library
+# ----------------------------------------------------------------------
 # Définition des COLLECTIONS (Groupes de contenu que l'on peut éditer)
 # ----------------------------------------------------------------------
 collections:
