@@ -1,0 +1,21 @@
+{
+  "contact_text": "Contactez-moi",
+  "links": [
+    {
+      "text": "Accueil",
+      "url": "#accueil"
+    },
+    {
+      "text": "Service",
+      "url": "#services"
+    },
+    {
+      "text": "Skills",
+      "url": "#skills"
+    },
+    {
+      "text": "Projet",
+      "url": "#project"
+    }
+  ]
+}

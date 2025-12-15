@@ -39,6 +39,13 @@ collections:
           - {label: "Fichier CV (Image)", name: "cv_jpg", widget: "file", media_folder: "assets/image"}
           - {label: "Image de Profil", name: "profile_image", widget: "image", media_folder: "assets/image"}
 
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/navigation.json"
+        fields:
+          - {label: "Texte du bouton Contact", name: "contact_text", widget: "string", default: "Contactez-moi"}
+          - {label: "Liens de navigation", name: "links", widget: "list", fields: [{label: "Texte", name: "text", widget: "string"}, {label: "URL", name: "url", widget: "string"}]}
+
       - label: "Section Projets"
         name: "projects"
         file: "_data/projects.json"
@@ -46,9 +53,19 @@ collections:
           - {label: "Titre Section Projets", name: "project_title", widget: "string", default: "Mes Projets"}
           - {label: "Sous-titre Section Projets", name: "project_subtitle", widget: "string", default: "Clients Réalisés"}
           - {label: "Description Section Projets", name: "project_description", widget: "text", default: "La preuve est dans la performance. Chaque projet présenté ici est le résultat d'une stratégie de contenu sur mesure, transformée en une solution web concrète. Découvrez comment j'ai aidé ces entreprises à optimiser leur présence en ligne et à atteindre leurs objectifs de croissance."}
-          - {label: "Titre Client 1 (Mamy-Délices)", name: "client1_title", widget: "string", default: "Mamy-Délices, Patisserie-Glacier (Bamako)"}
-          - {label: "Titre Client 2 (LeMarchand)", name: "client2_title", widget: "string", default: "LeMarchand, Supermarché (Bamako)"}
-          - {label: "Titre Client 3 (DFA-Communication)", name: "client3_title", widget: "string", default: "Agence DFA-Communication (Bamako)"}
+          - label: "Catégories de Projets (Clients)"
+            name: "project_categories"
+            widget: "list"
+            fields:
+              - {label: "Titre du Client", name: "title", widget: "string"}
+              - label: "Images du Projet"
+                name: "images"
+                widget: "list"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Nom (au survol)", name: "name", widget: "string", default: "Nom du projet"}
+                  - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Je veux le mm"}
+                  - {label: "Lien du bouton", name: "button_link", widget: "string", default: "#"}
 
       - label: "Mes Outils de Travail"
         name: "services_skills"
@@ -59,6 +76,19 @@ collections:
           - {label: "Titre Section Outils", name: "skill_title", widget: "string", default: "Mes Outils de"}
           - {label: "Sous-titre Section Outils", name: "skill_subtitle", widget: "string", default: "Travail"}
           - {label: "Description Section Outils", name: "skill_description", widget: "text", default: "Ma performance repose sur une expertise solide des plateformes de gestion de contenu, des outils d'analyse d'audience, et des logiciels de production éditoriale. Je choisis des solutions qui garantissent la pertinence, l'engagement et la portée maximale de chaque message."}
+          - label: "Liste des Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Titre du Service", name: "title", widget: "string"}
+              - {label: "Image du Service", name: "image", widget: "image"}
+          - label: "Liste des Outils/Compétences"
+            name: "skills"
+            widget: "list"
+            fields:
+              - {label: "Nom de l'outil", name: "name", widget: "string"}
+              - {label: "Image de l'outil", name: "image", widget: "image"}
+              - {label: "Pourcentage (ex: 95%)", name: "progress", widget: "string"}
 
       - label: "Pied de page & Contact"
         name: "footer_contact"

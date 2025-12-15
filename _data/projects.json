@@ -2,7 +2,57 @@
   "project_description": "La preuve est dans la performance. Chaque projet présenté ici est le résultat d'une stratégie de contenu sur mesure, transformée en une solution web concrète. Découvrez comment j'ai aidé ces entreprises à optimiser leur présence en ligne et à atteindre leurs objectifs de croissance.",
   "project_title": " Mes Projets",
   "project_subtitle": " Clients Réalisés",
-  "client1_title": " Mamy-Délices, Patisserie-Glacier (Bamako)",
-  "client2_title": " LeMarchand, Supermarché (Bamako)",
-  "client3_title": " Agence DFA-Communication (Bamako)"
+  "project_categories": [
+    {
+      "title": "Mamy-Délices, Patisserie-Glacier (Bamako)",
+      "images": [
+        {
+          "image": "/assets/image/mamydelice (1).jpeg",
+          "name": "Projet Mamy-Délices 1",
+          "button_text": "Je veux le mm",
+          "button_link": "#"
+        },
+        {
+          "image": "/assets/image/mamydelice (2).jpeg",
+          "name": "Projet Mamy-Délices 2",
+          "button_text": "Je veux le mm",
+          "button_link": "#"
+        },
+        {
+          "image": "/assets/image/mamydelice (3).jpeg",
+          "name": "Projet Mamy-Délices 3",
+          "button_text": "Je veux le mm",
+          "button_link": "#"
+        },
+        {
+          "image": "/assets/image/mamydelice (4).jpeg",
+          "name": "Projet Mamy-Délices 4",
+          "button_text": "Je veux le mm",
+          "button_link": "#"
+        }
+      ]
+    },
+    {
+      "title": "LeMarchand, Supermarché (Bamako)",
+      "images": [
+        {
+          "image": "/assets/image/lemarchand_1.jpeg",
+          "name": "Projet LeMarchand 1",
+          "button_text": "Je veux le mm",
+          "button_link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Agence DFA-Communication (Bamako)",
+      "images": [
+        {
+          "image": "/assets/image/dfa1.jpeg",
+          "name": "Projet DFA-Communication 1",
+          "button_text": "Je veux le mm",
+          "button_link": "#"
+        }
+      ]
+    }
+  ]
 }

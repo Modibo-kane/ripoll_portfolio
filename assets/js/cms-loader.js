@@ -1,110 +1,157 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // URLs vers les fichiers JSON créés par Decap CMS
-    const DATA_URLS = {
-        home: '_data/home.json',
-        projects: '_data/projects.json',
-        services_skills: '_data/services_skills.json',
-        footer_contact: '_data/footer_contact.json'
+    const loadJsonData = async (url, callback) => {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Erreur de chargement du fichier ${url}: ${response.statusText}`);
+            }
+            const data = await response.json();
+            callback(data);
+        } catch (error) {
+            console.error(error);
+        }
     };
 
-    // Fonction pour récupérer un fichier JSON
-    const fetchData = (url) => fetch(url).then(response => {
-        if (!response.ok) {
-            console.warn(`Fichier de données CMS non trouvé à ${url}.`);
-            return {}; // Retourne un objet vide en cas d'erreur pour ne pas bloquer Promise.all
+    const updateTextContent = (elementId, text) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.textContent = text;
         }
-        return response.json();
-    }).catch(error => {
-        console.error(`Erreur lors du chargement de ${url}:`, error);
-        return {};
+    };
+
+    const updateHtmlContent = (elementId, html) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.innerHTML = html;
+        }
+    };
+
+    const updateImageSrc = (elementId, src) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.src = src;
+        }
+    };
+
+    const updateLinkHref = (elementId, href) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.href = href;
+        }
+    };
+
+    loadJsonData('_data/home.json', data => {
+        updateTextContent('brand-name-desktop', data.brand_name);
+        updateTextContent('brand-name-mobile', data.brand_name);
     });
 
-    // Récupérer toutes les données en parallèle
-    Promise.all([
-        fetchData(DATA_URLS.home),
-        fetchData(DATA_URLS.projects),
-        fetchData(DATA_URLS.services_skills),
-        fetchData(DATA_URLS.footer_contact)
-    ]).then(([homeData, projectsData, servicesSkillsData, footerContactData]) => {
-        // Fusionner toutes les données en un seul objet
-        const data = { ...homeData, ...projectsData, ...servicesSkillsData, ...footerContactData };
+    loadJsonData('_data/navigation.json', data => {
+        const navLinksDesktop = document.getElementById('nav-links-desktop');
+        const navLinksMobile = document.getElementById('nav-links-responsive-inner');
 
-        // Si on a au moins quelques données, on met à jour la page
-        if (Object.keys(data).length > 0) {
-            console.log('Données CMS combinées chargées avec succès :', data);
-            injectData(data);
+        if (data.links && navLinksDesktop && navLinksMobile) {
+            data.links.forEach(link => {
+                // Création des liens pour le bureau
+                const aDesktop = document.createElement('a');
+                aDesktop.className = 'px-4';
+                aDesktop.href = link.url;
+                aDesktop.textContent = link.text;
+                navLinksDesktop.appendChild(aDesktop);
+
+                // Création des liens pour le mobile
+                const aMobile = document.createElement('a');
+                aMobile.className = 'px-4';
+                aMobile.href = link.url;
+                aMobile.innerHTML = `${link.text} <i class="fa-solid fa-angle-right"></i>`;
+                // Insérer avant le dernier élément (le div .nav-action)
+                navLinksMobile.insertBefore(aMobile, navLinksMobile.lastElementChild);
+            });
+        }
+
+        updateTextContent('btn-contact-desktop', data.contact_text);
+    });
+
+    loadJsonData('_data/projects.json', data => {
+        updateTextContent('projetTitrePrincipal', data.project_title);
+        updateTextContent('project_subtitle', data.project_subtitle);
+        updateHtmlContent('projetDescription', data.project_description);
+
+        const projectContainer = document.getElementById('project');
+        const projectButtonContainer = document.getElementById('btn-container-projet');
+
+        if (data.project_categories && projectContainer && projectButtonContainer) {
+            data.project_categories.forEach(category => {
+                // Créer le titre de la catégorie
+                const categoryTitle = document.createElement('h3');
+                categoryTitle.className = 'projetBoxTitre';
+                categoryTitle.textContent = category.title;
+
+                // Créer le conteneur pour la grille d'images
+                const scrollContainer = document.createElement('div');
+                scrollContainer.className = 'mobile-scroll-container';
+                const projectsGrid = document.createElement('div');
+                projectsGrid.className = 'projetsGrid scroll-wrapper';
+
+                // Remplir la grille avec les images du projet
+                category.images.forEach(project => {
+                    const projectBox = document.createElement('div');
+                    projectBox.className = 'projetBox';
+                    projectBox.innerHTML = `
+                        <img src="${project.image}" alt="Image pour ${project.name}">
+                        <div class="projetHoverContent">
+                            <h4 class="projetName">${project.name}</h4>
+                            <a href="${project.button_link}" class="projetButton">${project.button_text}</a>
+                        </div>`;
+                    projectsGrid.appendChild(projectBox);
+                });
+
+                scrollContainer.appendChild(projectsGrid);
+                projectContainer.insertBefore(categoryTitle, projectButtonContainer);
+                projectContainer.insertBefore(scrollContainer, projectButtonContainer);
+            });
         }
     });
 
-    // Fonction principale pour injecter les données dans le DOM
-    function injectData(data) {
-        // Fonction utilitaire pour mettre à jour le contenu d'un élément
-        const updateContent = (id, content, isHtml = false) => {
-            const element = document.getElementById(id);
-            if (element && content) {
-                if (isHtml) {
-                    element.innerHTML = content;
-                } else {
-                    element.textContent = content;
-                }
-            }
-        };
+    loadJsonData('_data/services_skills.json', data => {
+        const serviceGrid = document.getElementById('service-grid');
+        if (data.services && serviceGrid) {
+            data.services.forEach(service => {
+                const serviceBox = document.createElement('div');
+                serviceBox.className = 'serviceBox';
 
-        // Fonction utilitaire pour mettre à jour un attribut (src, href)
-        const updateAttribute = (id, attribute, value) => {
-            const element = document.getElementById(id);
-            if (element && value) {
-                element[attribute] = value;
-            }
-        };
+                serviceBox.innerHTML = `
+                    <div class="serviceImage">
+                        <img src="${service.image}" alt="Image pour ${service.title}">
+                    </div>
+                    <div class="serviceLeft">
+                        <h3 class="serviceName"><span>${service.title}</span></h3>
+                    </div>
+                `;
 
-        // --- Injection des données ---
+                serviceGrid.appendChild(serviceBox);
+            });
+        }
 
-        // Header
-        updateContent('brand-name-desktop', data.brand_name);
-        updateContent('brand-name-mobile', data.brand_name);
+        const skillsGrid = document.getElementById('skills-grid');
+        if (data.skills && skillsGrid) {
+            data.skills.forEach(skill => {
+                const skillBox = document.createElement('div');
+                skillBox.className = 'skillBox';
 
-        // Section Accueil
-        updateAttribute('profile-image', 'src', data.profile_image);
-        updateContent('accueilTitrePrincipale', data.main_title);
-        updateContent('tagline', data.tagline);
-        updateContent('accueilDescription', data.home_description);
-        updateContent('labelNom', data.full_name);
-        updateContent('labelEmail', data.email);
-        updateContent('labelNumrero', data.phone);
-        updateContent('labelRegion', data.region);
-        updateAttribute('downloadPDF', 'href', data.cv_pdf);
-        updateAttribute('downloadJPG', 'href', data.cv_jpg);
+                skillBox.innerHTML = `
+                    <img src="${skill.image}" class="xd animate-fade-in-icon" alt="${skill.name}">
+                    <h3 class="skillName">${skill.name}</h3>
+                    <div class="progressBare">${skill.progress}</div>
+                `;
 
-        // Section Projets
-        updateContent('projetTitrePrincipal', data.project_title);
-        updateContent('project_subtitle', data.project_subtitle);
-        updateContent('projetDescription', data.project_description, true);
-        updateContent('projetTitreSecondaire1', data.client1_title);
-        updateContent('projetTitreSecondaireMarchand', data.client2_title);
-        updateContent('projetTitreSecondaireDfa', data.client3_title);
+                skillsGrid.appendChild(skillBox);
+            });
+        }
 
-        // Sections Services & Skills
-        updateContent('serviceTitrePrincipale', data.service_title);
-        updateContent('span-service', data.service_subtitle);
-        updateContent('skill-title', data.skill_title);
-        updateContent('span-skills', data.skill_subtitle);
-        updateContent('skill-description', data.skill_description, true);
-
-        // Footer & Liens Sociaux
-        updateAttribute('social-icon-twitter-footer', 'href', data.twitter_link);
-        updateAttribute('social-icon-linkedin-footer', 'href', data.linkedin_link);
-        updateAttribute('social-icon-linkedin', 'href', data.linkedin_link);
-        updateAttribute('social-icon-twitter', 'href', data.twitter_link);
-        updateAttribute('social-icon-email', 'href', data.footer_email);
-        updateContent('footer-brand-title', data.footer_title);
-        updateContent('footer-tagline', data.footer_tagline);
-        updateContent('footer-copyright', data.copyright, true);
-
-        // Page Contact
-        updateContent('whatsapp-heading', data.whatsapp_title);
-        updateContent('whatsapp-p', data.whatsapp_description);
-        updateContent('reseaux-h1', data.contact_title);
-        updateContent('reseaux-p', data.contact_description, true);
-    }
+        updateTextContent('serviceTitrePrincipale', data.service_title);
+        updateTextContent('span-service', data.service_subtitle);
+        updateTextContent('skill-title', data.skill_title);
+        updateTextContent('span-skills', data.skill_subtitle);
+        updateHtmlContent('skill-description', data.skill_description);
+    });
 });

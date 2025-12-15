@@ -3,5 +3,84 @@
   "service_subtitle": "Stratégiques",
   "skill_title": "Mes Outils de",
   "skill_subtitle": "Travail",
-  "skill_description": "Ma performance repose sur une expertise solide des plateformes de gestion de contenu, des outils d'analyse d'audience, et des logiciels de production éditoriale. Je choisis des solutions qui garantissent la pertinence, l'engagement et la portée maximale de chaque message."
+  "skill_description": "Ma performance repose sur une expertise solide des plateformes de gestion de contenu, des outils d'analyse d'audience, et des logiciels de production éditoriale. Je choisis des solutions qui garantissent la pertinence, l'engagement et la portée maximale de chaque message.",
+  "services": [
+    {
+      "title": "Creation de Contenus",
+      "image": "/assets/image/contenu.jpg"
+    },
+    {
+      "title": "Stratégie Digitale",
+      "image": "/assets/image/stratégie.jpg"
+    },
+    {
+      "title": "Traitement de l'Infos",
+      "image": "/assets/image/traitementinfos.jpg"
+    },
+    {
+      "title": "Rédaction d'articles",
+      "image": "/assets/image/redaction.jpg"
+    },
+    {
+      "title": "Montage Vidéo",
+      "image": "/assets/image/montagevideo.jpg"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Photoshop",
+      "image": "/assets/image/photoshop.png",
+      "progress": "95%"
+    },
+    {
+      "name": "Adobe Première Pro",
+      "image": "/assets/image/premiere.png",
+      "progress": "90%"
+    },
+    {
+      "name": "Capcut",
+      "image": "/assets/image/capcut.webp",
+      "progress": "85%"
+    },
+    {
+      "name": "Metricol",
+      "image": "/assets/image/metricol.png",
+      "progress": "80%"
+    },
+    {
+      "name": "MetaSuiteBusiness",
+      "image": "/assets/image/metasuiteBusiness.png",
+      "progress": "95%"
+    },
+    {
+      "name": "ChatGPT",
+      "image": "/assets/image/ChatGPT.png",
+      "progress": "95%"
+    },
+    {
+      "name": "Gemini",
+      "image": "/assets/image/gemini.webp",
+      "progress": "95%"
+    },
+    {
+      "name": "Canvas",
+      "image": "/assets/image/canvawebp.webp",
+      "progress": "95%"
+    },
+    {
+      "name": "Audacity",
+      "image": "/assets/image/audacity.png",
+      "progress": "90%"
+    },
+    {
+      "name": "Adobe Audition",
+      "image": "/assets/image/adobe-audition.png",
+      "progress": "98%"
+    },
+    {
+      "name": "Brand24",
+      "image": "/assets/image/brand4.png",
+      "progress": "98%"
+    }
+  ]
 }
