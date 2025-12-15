@@ -1,0 +1,48 @@
+/* 
+Ce fichier CSS est injecté dans l'interface d'administration de Decap CMS 
+pour ajouter des icônes et améliorer le style.
+*/
+
+/* Cible le lien de navigation pour la section "Accueil" */
+a[href="#/collections/settings/entries/home"]::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f015"; /* Icône "maison" (fa-home) */
+    margin-right: 10px;
+    width: 20px; /* Assure un alignement constant */
+    display: inline-block;
+    text-align: center;
+}
+
+/* Cible le lien de navigation pour la section "Projets" */
+a[href="#/collections/settings/entries/projects"]::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0b1"; /* Icône "mallette" (fa-briefcase) */
+    margin-right: 10px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Cible le lien de navigation pour la section "Services & Compétences" */
+a[href="#/collections/settings/entries/services_skills"]::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0ad"; /* Icône "engrenages" (fa-gears) */
+    margin-right: 10px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Cible le lien de navigation pour la section "Pied de page & Contact" */
+a[href="#/collections/settings/entries/footer_contact"]::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0e0"; /* Icône "enveloppe" (fa-envelope) */
+    margin-right: 10px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
