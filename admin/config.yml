@@ -58,7 +58,7 @@ collections:
           - {label: "Sous-titre Section Services", name: "service_subtitle", widget: "string", default: "Stratégiques"}
           - {label: "Titre Section Outils", name: "skill_title", widget: "string", default: "Mes Outils de"}
           - {label: "Sous-titre Section Outils", name: "skill_subtitle", widget: "string", default: "Travail"}
-          - {label: "Description Section Outils", name: "skill_description", widget: "text", default: "Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eveniet dolor minus nostrum quaerat rem quo accusantium incidunt, "}
+          - {label: "Description Section Outils", name: "skill_description", widget: "text", default: "Ma performance repose sur une expertise solide des plateformes de gestion de contenu, des outils d'analyse d'audience, et des logiciels de production éditoriale. Je choisis des solutions qui garantissent la pertinence, l'engagement et la portée maximale de chaque message."}
 
       - label: "Pied de page & Contact"
         name: "footer_contact"
