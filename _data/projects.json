@@ -65,10 +65,16 @@
       "title": "Agence DFA-Communication (Bamako)",
       "images": [
         {
-          "image": "/assets/image/dfa1.jpeg",
+          "image": "/assets/image/dfa4.jpeg",
           "name": "Projet DFA-Communication 1",
           "button_text": "Je veux le même",
           "button_link": "#"
+        },
+        {
+          "name": "Nom du projet",
+          "button_text": "Je veux le même",
+          "button_link": "#",
+          "image": "/assets/image/dfa7.jpeg"
         }
       ]
     }
