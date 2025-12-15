@@ -1,0 +1,54 @@
+backend:
+  # Utilise Netlify Identity pour l'authentification
+  name: git-gateway
+  # Indique à Netlify la branche principale de votre projet GitHub
+  branch: main 
+
+# Active le workflow éditorial : permet de réviser les changements avant publication
+publish_mode: editorial_workflow
+
+# ----------------------------------------------------------------------
+# Définition des COLLECTIONS (Groupes de contenu que l'on peut éditer)
+# ----------------------------------------------------------------------
+collections:
+  - name: "settings"
+    label: "Paramètres du Site"
+    # Ce type de collection permet d'éditer un seul fichier qui contient tous les réglages
+    files:
+      - label: "Contenu de la Page d'Accueil"
+        name: "general"
+        # Le contenu sera stocké dans ce nouveau fichier :
+        file: "_data/homepage.json" 
+        fields:
+          - {label: "Nom de la marque (Header)", name: "brand_name", widget: "string", default: "Ripoll Darcia"}
+          - {label: "Titre principal (H1)", name: "main_title", widget: "string", default: "Darcia Ripoll"}
+          - {label: "Slogan / Sous-titre", name: "tagline", widget: "string", default: "| Stratège de Contenus & Performance Web"}
+          - {label: "Description d'accueil", name: "home_description", widget: "text", default: "Obtenez un service web qui marquera durablement les esprits de votre public !"}
+          - {label: "Nom complet (Info)", name: "full_name", widget: "string", default: "Darcia Ripoll"}
+          - {label: "Email (Info)", name: "email", widget: "string", default: "ripollbis@gmail.com"}
+          - {label: "Téléphone (Info)", name: "phone", widget: "string", default: "+242 06 786 9231"}
+          - {label: "Région (Info)", name: "region", widget: "string", default: "Brazzaville, Congo"}
+          - {label: "Fichier CV (PDF)", name: "cv_pdf", widget: "file", media_folder: "assets/docs"}
+          - {label: "Fichier CV (Image)", name: "cv_jpg", widget: "file", media_folder: "assets/image"}
+          - {label: "Titre Section Projets", name: "project_title", widget: "string", default: "Mes Projets"}
+          - {label: "Sous-titre Section Projets", name: "project_subtitle", widget: "string", default: "Clients Réalisés"}
+          - {label: "Description Section Projets", name: "project_description", widget: "text", default: "Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eveniet dolor minus nostrum quaerat rem quo accusantium incidunt, "}
+          - {label: "Titre Client 1 (Mamy-Délices)", name: "client1_title", widget: "string", default: "Mamy-Délices, Patisserie-Glacier (Bamako)"}
+          - {label: "Titre Client 2 (LeMarchand)", name: "client2_title", widget: "string", default: "LeMarchand, Supermarché (Bamako)"}
+          - {label: "Titre Client 3 (DFA-Communication)", name: "client3_title", widget: "string", default: "Agence DFA-Communication (Bamako)"}
+          - {label: "Titre Section Services", name: "service_title", widget: "string", default: "Mes Services"}
+          - {label: "Sous-titre Section Services", name: "service_subtitle", widget: "string", default: "Stratégiques"}
+          - {label: "Titre Section Outils", name: "skill_title", widget: "string", default: "Mes Outils de"}
+          - {label: "Sous-titre Section Outils", name: "skill_subtitle", widget: "string", default: "Travail"}
+          - {label: "Description Section Outils", name: "skill_description", widget: "text", default: "Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eveniet dolor minus nostrum quaerat rem quo accusantium incidunt, "}
+          - {label: "Lien Twitter", name: "twitter_link", widget: "string", default: "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA"}
+          - {label: "Lien LinkedIn", name: "linkedin_link", widget: "string", default: "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/"}
+          - {label: "Email de contact (Footer)", name: "footer_email", widget: "string", default: "mailto:ripollbis@gmail.com"}
+          - {label: "Titre Footer", name: "footer_title", widget: "string", default: "Ripoll"}
+          - {label: "Slogan Footer", name: "footer_tagline", widget: "string", default: "Votre vision, notre création."}
+          - {label: "Copyright", name: "copyright", widget: "string", default: "&copy; Ripoll. Tous droits réservés."}
+          - {label: "Titre Contact (WhatsApp)", name: "whatsapp_title", widget: "string", default: "Contactez-moi sur"}
+          - {label: "Description Contact (WhatsApp)", name: "whatsapp_description", widget: "string", default: "Remplissez les champs ci-dessous pour générer votre message personnalisé."}
+          - {label: "Titre Contact (Réseaux)", name: "contact_title", widget: "string", default: "Ripoll Darcia"}
+          - {label: "Description Contact (Réseaux)", name: "contact_description", widget: "string", default: "<strong>Stratège de contenus et Performance Web</strong> \" L'oeil stratégique derrière votre présence digitale\""}
+          - {label: "Image de Profil", name: "profile_image", widget: "image", media_folder: "assets/image"}

@@ -57,6 +57,10 @@
         padding: 1rem 1rem 1rem 1rem; 
     }
 
+    .label{
+        font-size: 1.5rem;
+    }
+
     .accueil-image-wrapper {
         height: auto;
         justify-content: center;
@@ -85,6 +89,7 @@
     .description {
         font-size: 1.5rem; 
         line-height: 1.8rem;
+        margin-top: 2rem;
     }
 
     .rectangleInfos {
@@ -118,7 +123,11 @@
 
     .serviceCont{
       padding-inline: 2rem;
+      padding-block: 0rem;
+      min-height: 70vh;
     }
+
+    
 
     .serviceTitle{
         font-size: 1.97rem;
@@ -205,6 +214,8 @@
 
     .skillCont {
       padding-inline: 2rem;
+      /* padding-block: 2rem; */
+      min-height:70vh;
     }
     
 
