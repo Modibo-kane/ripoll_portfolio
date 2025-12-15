@@ -58,12 +58,6 @@
           "button_text": "Je veux le même",
           "button_link": "#",
           "image": "/assets/image/lemarchand_1.jpeg"
-        },
-        {
-          "name": "Pelletier pain grillé",
-          "button_text": "Je veux le même",
-          "button_link": "#",
-          "image": "/assets/image/lemarchand_5.jpeg"
         }
       ]
     },
