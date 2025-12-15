@@ -94,11 +94,20 @@ collections:
         name: "footer_contact"
         file: "_data/footer_contact.json"
         fields:
-          - {label: "Lien Twitter", name: "twitter_link", widget: "string", default: "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA"}
-          - {label: "Lien LinkedIn", name: "linkedin_link", widget: "string", default: "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/"}
-          - {label: "Email de contact (Footer)", name: "footer_email", widget: "string", default: "mailto:ripollbis@gmail.com"}
           - {label: "Titre Footer", name: "footer_title", widget: "string", default: "Ripoll"}
           - {label: "Slogan Footer", name: "footer_tagline", widget: "string", default: "Votre vision, notre création."}
+          - {label: "Titre Colonne Navigation", name: "nav_title", widget: "string", default: "Navigation"}
+          - label: "Liens de Navigation (Footer)"
+            name: "footer_links"
+            widget: "list"
+            fields:
+              - {label: "Texte", name: "text", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+          - {label: "Titre Colonne Social", name: "social_title", widget: "string", default: "Suivez-nous"}
+          - {label: "Lien Twitter", name: "twitter_link", widget: "string", default: "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA"}
+          - {label: "Lien LinkedIn", name: "linkedin_link", widget: "string", default: "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/"}
+          - {label: "Titre Colonne Newsletter", name: "newsletter_title", widget: "string", default: "Rejoignez ma newsletter"}
+          - {label: "Placeholder Newsletter", name: "newsletter_placeholder", widget: "string", default: "Votre adresse email"}
           - {label: "Copyright", name: "copyright", widget: "string", default: "&copy; Ripoll. Tous droits réservés."}
           - {label: "Titre Contact (WhatsApp)", name: "whatsapp_title", widget: "string", default: "Contactez-moi sur"}
           - {label: "Description Contact (WhatsApp)", name: "whatsapp_description", widget: "string", default: "Remplissez les champs ci-dessous pour générer votre message personnalisé."}

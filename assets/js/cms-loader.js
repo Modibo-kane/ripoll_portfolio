@@ -160,4 +160,32 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTextContent('span-skills', data.skill_subtitle);
         updateHtmlContent('skill-description', data.skill_description);
     });
+
+    loadJsonData('_data/footer_contact.json', data => {
+        updateTextContent('footer-brand-title', data.footer_title);
+        updateTextContent('footer-tagline', data.footer_tagline);
+        updateTextContent('footer-heading-social', data.social_title);
+        updateTextContent('footer-heading-newsletter', data.newsletter_title);
+        updateHtmlContent('footer-copyright', data.copyright);
+
+        const newsletterInput = document.getElementById('newsletter-input');
+        if (newsletterInput) {
+            newsletterInput.placeholder = data.newsletter_placeholder;
+        }
+
+        updateLinkHref('social-icon-twitter-footer', data.twitter_link);
+        updateLinkHref('social-icon-linkedin-footer', data.linkedin_link);
+
+        const footerLinksNav = document.getElementById('footer-links-nav');
+        if (data.footer_links && footerLinksNav) {
+            footerLinksNav.innerHTML = `<h4 class="footer-heading" id="footer-heading-nav">${data.nav_title}</h4>`;
+            data.footer_links.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.url;
+                a.className = 'footer-link';
+                a.textContent = link.text;
+                footerLinksNav.appendChild(a);
+            });
+        }
+    });
 });
