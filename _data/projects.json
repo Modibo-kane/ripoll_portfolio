@@ -1,5 +1,5 @@
 {
-  "project_description": "La preuve est dans la performance. Chaque projet présenté ici est le résultat d'une stratégie de contenu sur mesure, transformée en une solution web concrète. Découvrez comment j'ai aidé ces entreprises à optimiser leur présence en ligne et à atteindre leurs objectifs de croissance.",
+  "project_description": "La preuve est dans la performance. Chaque projet présenté ici est le résultat d'une stratégie de contenu sur mesure, transformée en une solution web concrète. Découvrez comêmeent j'ai aidé ces entreprises à optimiser leur présence en ligne et à atteindre leurs objectifs de croissance.",
   "project_title": " Mes Projets",
   "project_subtitle": " Clients Réalisés",
   "project_categories": [
@@ -9,25 +9,25 @@
         {
           "image": "/assets/image/mamydelice (1).jpeg",
           "name": "Projet Mamy-Délices 1",
-          "button_text": "Je veux le mm",
+          "button_text": "Je veux le même",
           "button_link": "#"
         },
         {
           "image": "/assets/image/mamydelice (2).jpeg",
           "name": "Projet Mamy-Délices 2",
-          "button_text": "Je veux le mm",
+          "button_text": "Je veux le même",
           "button_link": "#"
         },
         {
           "image": "/assets/image/mamydelice (3).jpeg",
           "name": "Projet Mamy-Délices 3",
-          "button_text": "Je veux le mm",
+          "button_text": "Je veux le même",
           "button_link": "#"
         },
         {
           "image": "/assets/image/mamydelice (4).jpeg",
           "name": "Projet Mamy-Délices 4",
-          "button_text": "Je veux le mm",
+          "button_text": "Je veux le même",
           "button_link": "#"
         }
       ]
@@ -38,7 +38,7 @@
         {
           "image": "/assets/image/lemarchand_1.jpeg",
           "name": "Projet LeMarchand 1",
-          "button_text": "Je veux le mm",
+          "button_text": "Je veux le même",
           "button_link": "#"
         }
       ]
@@ -49,7 +49,7 @@
         {
           "image": "/assets/image/dfa1.jpeg",
           "name": "Projet DFA-Communication 1",
-          "button_text": "Je veux le mm",
+          "button_text": "Je veux le même",
           "button_link": "#"
         }
       ]

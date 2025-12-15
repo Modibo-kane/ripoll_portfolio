@@ -64,7 +64,7 @@ collections:
                 fields:
                   - {label: "Image", name: "image", widget: "image"}
                   - {label: "Nom (au survol)", name: "name", widget: "string", default: "Nom du projet"}
-                  - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Je veux le mm"}
+                  - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Je veux le même"}
                   - {label: "Lien du bouton", name: "button_link", widget: "string", default: "#"}
 
       - label: "Mes Outils de Travail"
