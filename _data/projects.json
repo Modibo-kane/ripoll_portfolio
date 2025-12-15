@@ -69,6 +69,12 @@
           "name": "Projet DFA-Communication 1",
           "button_text": "Je veux le même",
           "button_link": "#"
+        },
+        {
+          "name": "Nom du projet",
+          "button_text": "Je veux le même",
+          "button_link": "#",
+          "image": "/assets/image/dfa7.jpeg"
         }
       ]
     }
