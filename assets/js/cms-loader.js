@@ -109,6 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectContainer.insertBefore(categoryTitle, projectButtonContainer);
                 projectContainer.insertBefore(scrollContainer, projectButtonContainer);
             });
+
+            // Une fois que tous les projets sont ajoutés au DOM,
+            // on appelle la fonction qui attache les effets de survol.
+            if (typeof initializeProjectHoverEffects === 'function') {
+                initializeProjectHoverEffects();
+            }
         }
     });
 
