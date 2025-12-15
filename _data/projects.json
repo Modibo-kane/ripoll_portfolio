@@ -40,6 +40,12 @@
           "name": "Projet LeMarchand 1",
           "button_text": "Je veux le mm",
           "button_link": "#"
+        },
+        {
+          "name": "Malizia Mousse de bain ",
+          "button_text": "Je veux le même",
+          "button_link": "#",
+          "image": "/assets/image/lemarchand_3.jpeg"
         }
       ]
     },
