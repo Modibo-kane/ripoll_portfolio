@@ -1,7 +1,13 @@
 {
-  "footer_title": "Ripoll",
+  "twitter_link": "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA",
+  "social_title": "Suivez-moi",
+  "copyright": "&copy; Ripoll. Tous droits réservés.",
   "footer_tagline": "Votre vision, notre création.",
-  "nav_title": "Navigation",
+  "whatsapp_title": "Contactez-moi sur",
+  "newsletter_placeholder": "Votre adresse email",
+  "whatsapp_description": "Remplissez les champs ci-dessous pour générer votre message personnalisé.",
+  "newsletter_title": "Rejoignez ma newsletter",
+  "footer_title": "Ripoll",
   "footer_links": [
     {
       "text": "Accueil",
@@ -20,14 +26,8 @@
       "url": "#contact"
     }
   ],
-  "social_title": "Suivez-nous",
-  "twitter_link": "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA",
-  "linkedin_link": "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/",
-  "newsletter_title": "Rejoignez ma newsletter",
-  "newsletter_placeholder": "Votre adresse email",
-  "copyright": "&copy; Ripoll. Tous droits réservés.",
-  "whatsapp_title": "Contactez-moi sur",
-  "whatsapp_description": "Remplissez les champs ci-dessous pour générer votre message personnalisé.",
   "contact_title": "Ripoll Darcia",
+  "linkedin_link": "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/",
+  "nav_title": "Navigation",
   "contact_description": "<strong>Stratège de contenus et Performance Web</strong> \" L'oeil stratégique derrière votre présence digitale\""
 }
