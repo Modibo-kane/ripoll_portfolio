@@ -1,0 +1,11 @@
+{
+  "name": "ripoll-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Ripoll Darcia",
+  "main": "index.html",
+  "scripts": {
+    "build": "node scripts/build-services.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

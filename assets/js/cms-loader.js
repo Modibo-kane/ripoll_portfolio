@@ -118,31 +118,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    loadJsonData('_data/services_skills.json', data => {
+    // Charge les services depuis le fichier JSON combiné
+    loadJsonData('_data/services-combined.json', services => {
         const serviceGrid = document.getElementById('service-grid');
-        if (data.services && serviceGrid) {
-            data.services.forEach(service => {
+        if (services && serviceGrid) {
+            services.forEach(service => {
                 const serviceBox = document.createElement('div');
                 serviceBox.className = 'serviceBox';
-
                 serviceBox.innerHTML = `
                     <img src="${service.image}" alt="Image pour ${service.title}">
                     <div class="serviceHoverContent">
                         <h3 class="serviceName">${service.title}</h3>
-                        <span class="serviceButton talk">${service.button_text}</span>
-                    </div>
-                `;
-
+                        <span class="serviceButton talk">${service.button_text || 'Demander ce service'}</span>
+                    </div>`;
                 serviceGrid.appendChild(serviceBox);
             });
 
-            // Une fois que tous les services sont ajoutés au DOM,
-            // on appelle la fonction qui attache les effets de survol/clic.
+            // Initialiser les effets de survol une fois tout chargé
             if (typeof initializeServiceHoverEffects === 'function') {
                 initializeServiceHoverEffects();
             }
         }
+    });
 
+    loadJsonData('_data/services_skills.json', data => {
         const skillsGrid = document.getElementById('skills-grid');
         if (data.skills && skillsGrid) {
             data.skills.forEach(skill => {

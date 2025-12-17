@@ -85,13 +85,6 @@ collections:
           - {label: "Titre Section Outils", name: "skill_title", widget: "string", default: "Mes Outils de"}
           - {label: "Sous-titre Section Outils", name: "skill_subtitle", widget: "string", default: "Travail"}
           - {label: "Description Section Outils", name: "skill_description", widget: "markdown", default: "Ma performance repose sur une expertise solide des plateformes de gestion de contenu, des outils d'analyse d'audience, et des logiciels de production éditoriale. Je choisis des solutions qui garantissent la pertinence, l'engagement et la portée maximale de chaque message."}
-          - label: "Liste des Services"
-            name: "services"
-            widget: "list"
-            fields:
-              - {label: "Titre du Service", name: "title", widget: "string"}
-              - {label: "Image du Service", name: "image", widget: "image"}
-              - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Demander ce service"}
           - label: "Liste des Outils/Compétences"
             name: "skills"
             widget: "list"
@@ -99,6 +92,19 @@ collections:
               - {label: "Nom de l'outil", name: "name", widget: "string"}
               - {label: "Image de l'outil", name: "image", widget: "image"}
               - {label: "Pourcentage (ex: 95%)", name: "progress", widget: "string"}
+
+  - label: "Liste des Services"
+    name: "services"
+    folder: "_data/services" # <-- INDIQUE QUE C'EST UNE LISTE DANS UN DOSSIER
+    create: true             # <-- PERMET LA CRÉATION VIA LE BOUTON "NEW"
+    slug: "{{slug}}"         # Utilise le titre pour générer le nom du fichier
+    fields:
+      - {label: "Titre du Service", name: "title", widget: "string"}
+      - {label: "Image du Service", name: "image", widget: "image"}
+      - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Demander ce service"}
+      - {label: "Description détaillée (optionnel)", name: "description", widget: "markdown", required: false}
+
+
 
   - label: "Pied de page & Contact"
     name: "footer_contact"
