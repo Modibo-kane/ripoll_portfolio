@@ -2,36 +2,44 @@
   "service_title": "Mes Services",
   "service_subtitle": "Stratégiques",
   "skill_title": "Mes Outils de",
+  "service_description": "Je propose une gamme complète de services conçus pour transformer votre présence en ligne. De la création de contenus engageants à la mise en place de stratégies digitales performantes, mon objectif est de vous fournir des solutions sur mesure qui génèrent des résultats concrets.",
   "skill_subtitle": "Travail",
   "skill_description": "Ma performance repose sur une expertise solide des plateformes de gestion de contenus, des outils d'analyse d'audience, et des logiciels de production éditoriale. Je choisis des solutions qui garantissent la pertinence, l'engagement et la portée maximale de chaque message.",
   "services": [
     {
       "title": "Creation de Contenus",
-      "image": "/assets/image/contenu.jpg"
+      "image": "/assets/image/contenu.jpg",
+      "button_text": "Demander ce service"
     },
     {
       "title": "Stratégie Digitale",
-      "image": "/assets/image/stratégie.jpg"
+      "image": "/assets/image/stratégie.jpg",
+      "button_text": "Demander ce service"
     },
     {
       "title": "Graphisme ",
-      "image": "/assets/image/graphisme.jpg"
+      "image": "/assets/image/graphisme.jpg",
+      "button_text": "Demander ce service"
     },
     {
       "title": "Rédaction d'articles",
-      "image": "/assets/image/redaction.jpg"
+      "image": "/assets/image/redaction.jpg",
+      "button_text": "Demander ce service"
     },
     {
       "title": "Montage Vidéo",
-      "image": "/assets/image/montagevideo.jpg"
+      "image": "/assets/image/montagevideo.jpg",
+      "button_text": "Demander ce service"
     },
     {
       "title": "SEO ",
-      "image": "/assets/image/SEO.jpg"
+      "image": "/assets/image/SEO.jpg",
+      "button_text": "Demander ce service"
     },
     {
       "title": "Développement  Web/mobile ",
-      "image": "/assets/image/devweb.jpg"
+      "image": "/assets/image/devweb.jpg",
+      "button_text": "Demander ce service"
     }
   ],
   "skills": [

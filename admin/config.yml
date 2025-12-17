@@ -67,12 +67,13 @@ collections:
                   - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Je veux le même"}
                   - {label: "Lien du bouton", name: "button_link", widget: "string", default: "#"}
 
-      - label: "Mes Outils de Travail"
+      - label: "Mes Outils de Travail et mes Services"
         name: "services_skills"
         file: "_data/services_skills.json"
         fields:
           - {label: "Titre Section Services", name: "service_title", widget: "string", default: "Mes Services"}
           - {label: "Sous-titre Section Services", name: "service_subtitle", widget: "string", default: "Stratégiques"}
+          - {label: "Description Section Services", name: "service_description", widget: "text", default: "Description par défaut des services."}
           - {label: "Titre Section Outils", name: "skill_title", widget: "string", default: "Mes Outils de"}
           - {label: "Sous-titre Section Outils", name: "skill_subtitle", widget: "string", default: "Travail"}
           - {label: "Description Section Outils", name: "skill_description", widget: "text", default: "Ma performance repose sur une expertise solide des plateformes de gestion de contenu, des outils d'analyse d'audience, et des logiciels de production éditoriale. Je choisis des solutions qui garantissent la pertinence, l'engagement et la portée maximale de chaque message."}
@@ -82,6 +83,7 @@ collections:
             fields:
               - {label: "Titre du Service", name: "title", widget: "string"}
               - {label: "Image du Service", name: "image", widget: "image"}
+              - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Demander ce service"}
           - label: "Liste des Outils/Compétences"
             name: "skills"
             widget: "list"

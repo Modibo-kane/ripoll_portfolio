@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Création des liens pour le mobile
                 const aMobile = document.createElement('a');
-                aMobile.className = 'px-4';
+                aMobile.className = 'px-4 block py-2 text-lg'; // Ajout des classes pour le style et la fermeture
                 aMobile.href = link.url;
                 aMobile.innerHTML = `${link.text} <i class="fa-solid fa-angle-right"></i>`;
                 // Insérer avant le dernier élément (le div .nav-action)
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img src="${project.image}" alt="Image pour ${project.name}">
                         <div class="projetHoverContent">
                             <h4 class="projetName">${project.name}</h4>
-                            <a href="${project.button_link}" class="projetButton">${project.button_text}</a>
+                            <span class="projetButton talk">${project.button_text}</span>
                         </div>`;
                     projectsGrid.appendChild(projectBox);
                 });
@@ -126,16 +126,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 serviceBox.className = 'serviceBox';
 
                 serviceBox.innerHTML = `
-                    <div class="serviceImage">
-                        <img src="${service.image}" alt="Image pour ${service.title}">
-                    </div>
-                    <div class="serviceLeft">
-                        <h3 class="serviceName"><span>${service.title}</span></h3>
+                    <img src="${service.image}" alt="Image pour ${service.title}">
+                    <div class="serviceHoverContent">
+                        <h3 class="serviceName">${service.title}</h3>
+                        <span class="serviceButton talk">${service.button_text}</span>
                     </div>
                 `;
 
                 serviceGrid.appendChild(serviceBox);
             });
+
+            // Une fois que tous les services sont ajoutés au DOM,
+            // on appelle la fonction qui attache les effets de survol/clic.
+            if (typeof initializeServiceHoverEffects === 'function') {
+                initializeServiceHoverEffects();
+            }
         }
 
         const skillsGrid = document.getElementById('skills-grid');
@@ -156,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateTextContent('serviceTitrePrincipale', data.service_title);
         updateTextContent('span-service', data.service_subtitle);
+        updateHtmlContent('service-description', data.service_description);
         updateTextContent('skill-title', data.skill_title);
         updateTextContent('span-skills', data.skill_subtitle);
         updateHtmlContent('skill-description', data.skill_description);
