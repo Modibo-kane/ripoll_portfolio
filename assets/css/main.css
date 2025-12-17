@@ -614,7 +614,7 @@ ul{
     /* Cible l'image directement dans .serviceBox */
     .serviceBox > img {
         width: 100%;
-        height: 100%;
+        height: 25vh;
         object-fit: cover;
         border-radius: 10px;
         transition: transform 0.5s ease-in-out;
