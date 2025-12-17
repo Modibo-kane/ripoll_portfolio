@@ -141,6 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    loadJsonData('_data/service_section.json', data => {
+        updateTextContent('serviceTitrePrincipale', data.service_title);
+        updateTextContent('span-service', data.service_subtitle);
+        updateHtmlContent('service-description', data.service_description);
+    });
+
     loadJsonData('_data/services_skills.json', data => {
         const skillsGrid = document.getElementById('skills-grid');
         if (data.skills && skillsGrid) {
@@ -158,9 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        updateTextContent('serviceTitrePrincipale', data.service_title);
-        updateTextContent('span-service', data.service_subtitle);
-        updateHtmlContent('service-description', data.service_description);
         updateTextContent('skill-title', data.skill_title);
         updateTextContent('span-skills', data.skill_subtitle);
         updateHtmlContent('skill-description', data.skill_description);
