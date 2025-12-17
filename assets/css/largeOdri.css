@@ -1,12 +1,12 @@
 @media screen and (min-width: 1200px) {
-    /* Styles pour les écrans 'xl' et plus grands */
+  /* Styles pour les écrans 'xl' et plus grands */
 
-    /* accueil ---------------------------------------------------------------------------- */
-    .accueil-content{
-        padding: 1rem;
-    }
+  /* accueil ---------------------------------------------------------------------------- */
+  .accueil-content {
+    padding: 1rem;
+  }
 
-    .imgContenaire{
-        width: 70%;
-    }
+  .imgContenaire {
+    width: 70%;
+  }
 }

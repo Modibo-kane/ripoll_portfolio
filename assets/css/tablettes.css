@@ -1,275 +1,267 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    /* Styles pour les écrans 'md' et plus petits */
-/* header --------------------------------------------------------------------- */
-    .header-container{
-        width: 100%;
-        display: flex;
-        height: 10vh;
-        justify-content: center;
-        /* background-color: red; */
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-        color: #1a202c;
-    }
+  /* Styles pour les écrans 'md' et plus petits */
+  /* header --------------------------------------------------------------------- */
+  .header-container {
+    width: 100%;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    /* background-color: red; */
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    color: #1a202c;
+  }
 
-    .px-4{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        background-color: gray;
-        padding-block: 0.6rem;
-        padding-inline: 0.8rem;
-        border-left: 4px solid var(--secondary-color);
-        font-size: 1.5rem;
-    }
+  .px-4 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: gray;
+    padding-block: 0.6rem;
+    padding-inline: 0.8rem;
+    border-left: 4px solid var(--secondary-color);
+    font-size: 1.5rem;
+  }
 
-    .reseauxPro .liste-reseaux li > span{
-        font-size: 1.8rem;
-    }
+  .reseauxPro .liste-reseaux li > span {
+    font-size: 1.8rem;
+  }
 
-    .nav-links-reponsive-cont{
-        justify-content: start;
-        align-items: start;
-    }
+  .nav-links-reponsive-cont {
+    justify-content: start;
+    align-items: start;
+  }
 
+  .navResponsive {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    align-items: center;
+    background-color: var(--text-color);
+  }
 
-    .navResponsive{
-      display: block;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding-inline: 1rem;
-      align-items: center;
-      background-color: var(--text-color);
-    }
-
-    .main-nav {
-        /* width: 80%;
+  .main-nav {
+    /* width: 80%;
         background-color: #f9fafb; 
         margin-top: 1.5rem;
         border-radius: 9999px;
         padding-inline: 1.5rem; */
-        display: none;
-    }
+    display: none;
+  }
 
-/* accueil ---------------------------------------------------------------------- */
+  /* accueil ---------------------------------------------------------------------- */
 
-    .accueil {
-        height: auto;
-        flex-direction: column;
-        min-height: 100vh;
-        padding: 1rem 1rem 1rem 1rem; 
-    }
+  .accueil {
+    height: auto;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem 1rem 1rem 1rem;
+  }
 
-    .accueil-image-wrapper {
-        height: auto;
-        justify-content: center;
-        padding-right: 0; 
-        width: 100%;
-        margin-top: 2rem;
-    }
+  .accueil-image-wrapper {
+    height: auto;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+    margin-top: 2rem;
+  }
 
-    .imgContenaire {
-        width: 60%; 
-        height: auto; 
-    }
+  .imgContenaire {
+    width: 60%;
+    height: auto;
+  }
 
-    .imgContenaire img {
-        height: 300px;
-    }
+  .imgContenaire img {
+    height: 300px;
+  }
 
-    .accueil-content {
-        height: auto;
-        align-items: center;
-        text-align: center; 
-        padding: 2rem 1rem; 
-        width: 100%;
-    }
+  .accueil-content {
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
 
-    .accueil-content .label{
-       font-size: 2rem; 
-    }
+  .accueil-content .label {
+    font-size: 2rem;
+  }
 
-    .accueil-content .value{
-        font-size: 1.5rem;
-    }
+  .accueil-content .value {
+    font-size: 1.5rem;
+  }
 
-    .description {
-        font-size: 1.5rem; 
-        line-height: 1.8rem;
-    }
+  .description {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
 
-    .rectangleInfos {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 0rem;
-    }
+  .rectangleInfos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+  }
 
-    .btnCont {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-        gap:2rem;
-        width: 100%;
-    }
+  .btnCont {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
 
-    .btnDownload {
-        margin-left: 0;
-        margin-top: 0rem;
-        padding: 1rem 2rem;
-    }
+  .btnDownload {
+    margin-left: 0;
+    margin-top: 0rem;
+    padding: 1rem 2rem;
+  }
 
-    .about-badge{
-      display: none;
-    }
+  .about-badge {
+    display: none;
+  }
 
+  /* service -------------------------------------------------------------------- */
 
-/* service -------------------------------------------------------------------- */
+  .section-full {
+    min-height: auto;
+    height: auto;
+  }
 
-    .section-full{
-      min-height: auto;
-      height: auto;
-    }
+  .serviceCont {
+    padding-inline: 2rem;
+  }
 
-    .serviceCont{
-      padding-inline: 2rem;
-    }
+  .serviceTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 
-    .serviceTitle{
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
+  .seeMore {
+    margin-top: 0rem;
+    padding-block: 0.7rem;
+    padding-inline: 3rem;
+  }
 
-    .seeMore{
-        margin-top: 0rem;
-        padding-block: 0.7rem;
-        padding-inline: 
-        3rem;
-    }
-    
-    .serviceImage > img {
-        height: 420px;
-    }
-    
-    /* 1. Configuration du conteneur de défilement (mobile-scroll-container) */
-    .mobile-scroll-container {
-        /* Permet le défilement horizontal */
-        overflow-x: auto; 
-        overflow-y: hidden;
-        width: 100%; 
-        /* box-shadow: 10px 0px 10px rgba(5, 5, 5, 0.608); */
-        /* border-right: var(--another-color) solid 20px; */
-        /* Optionnel : Masque la barre de défilement pour un look plus épuré sur mobile */
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;     /* Firefox */
-    }
+  .serviceImage > img {
+    height: 420px;
+  }
 
-    .mobile-scroll-container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari */
-    }
-    .serviceGrid {
-        display: flex; 
-        white-space: nowrap; 
-        width: max-content; 
-        gap: 2rem; 
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-block: 1rem;
-    }
-    .serviceBox {
-        flex-shrink: 0; 
-        flex-basis: 60vw;
-        height: 100%;
-    }
+  /* 1. Configuration du conteneur de défilement (mobile-scroll-container) */
+  .mobile-scroll-container {
+    /* Permet le défilement horizontal */
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    /* box-shadow: 10px 0px 10px rgba(5, 5, 5, 0.608); */
+    /* border-right: var(--another-color) solid 20px; */
+    /* Optionnel : Masque la barre de défilement pour un look plus épuré sur mobile */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
-    .serviceName {
-        font-size: 1.8rem;
-    }
+  .mobile-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .serviceGrid {
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-block: 1rem;
+  }
+  .serviceBox {
+    flex-shrink: 0;
+    flex-basis: 60vw;
+    height: 100%;
+  }
 
-    .serviceButton {
-        padding-block: 0.8rem;
-        border-radius: 0.8rem;
-        margin-bottom:0.5rem;
-        font-size: 2rem;
-        padding-inline: 2rem;
-    }
+  .serviceName {
+    font-size: 1.8rem;
+  }
 
-    
+  .serviceButton {
+    padding-block: 0.8rem;
+    border-radius: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    padding-inline: 2rem;
+  }
 
-/* skills -------------------------------------------------------------------------- */
+  /* skills -------------------------------------------------------------------------- */
 
   .skillTitle {
-      font-size: 3rem;
-      font-weight: bold;
+    font-size: 3rem;
+    font-weight: bold;
   }
 
   .skillDescription {
-    font-size:1.5rem;
+    font-size: 1.5rem;
     line-height: 2.2rem;
   }
 
   .skillsGrid {
-        /* Écrase les propriétés Grid (grid-template-columns) */
-        display: flex; 
-        grid-template-columns: none; /* Désactive la grille */
-        
-        /* Force les éléments à rester sur une seule ligne */
-        white-space: nowrap; 
-        width: max-content; 
-        
-        /* Ajout de padding horizontal pour l'esthétique du défilement */
-        padding-left: 1rem;
-        padding-right: 1rem;
-        
-        /* Réutilise l'espacement de la grille (gap) */
-        gap: 2rem; 
-    }
-    
-    /* 3. Configuration des boîtes individuelles (skillBox) */
-    .skillBox {
-        flex-shrink: 0;
-        flex-basis: 55vw;
-        height: 350px;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    /* Écrase les propriétés Grid (grid-template-columns) */
+    display: flex;
+    grid-template-columns: none; /* Désactive la grille */
 
-    .xd{
-        height: 9rem;
-        width: 9rem;
-    }
+    /* Force les éléments à rester sur une seule ligne */
+    white-space: nowrap;
+    width: max-content;
 
-    .skillIcon{
-        font-size: 9rem;
-    }
+    /* Ajout de padding horizontal pour l'esthétique du défilement */
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-    .skillName {
-        font-size: 3.1rem;
-    }
+    /* Réutilise l'espacement de la grille (gap) */
+    gap: 2rem;
+  }
 
-    .progressBare {
-        font-size:2rem;
-        margin-top: 2rem;
-    }
+  /* 3. Configuration des boîtes individuelles (skillBox) */
+  .skillBox {
+    flex-shrink: 0;
+    flex-basis: 55vw;
+    height: 350px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .skillCont {
-      padding-inline: 2rem;
-    }
-    
+  .xd {
+    height: 9rem;
+    width: 9rem;
+  }
 
-/* projets -------------------------------------------------------------------------- */
+  .skillIcon {
+    font-size: 9rem;
+  }
 
-    
+  .skillName {
+    font-size: 3.1rem;
+  }
+
+  .progressBare {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .skillCont {
+    padding-inline: 2rem;
+  }
+
+  /* projets -------------------------------------------------------------------------- */
 
   .projetTitle {
-      font-size: 3rem;
-      font-weight: bold;
-      width: 100%;
-      text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
   }
 
   .projetDescription {
@@ -277,7 +269,7 @@
     text-align: center;
   }
 
-  .projetBoxTitre{
+  .projetBoxTitre {
     color: #ffffff;
     font-weight: bolder;
     font-size: 1.6rem;
@@ -287,7 +279,7 @@
     padding-inline: 0.8rem;
     padding-block: 0.6rem;
     background-color: #343c4c;
-    border-left:solid 4px var(--secondary-color);
+    border-left: solid 4px var(--secondary-color);
   }
 
   .btnContProjet {
@@ -295,70 +287,69 @@
     justify-content: end;
   }
 
-  .btnContact{
+  .btnContact {
     padding: 1rem 2rem;
     font-size: 1.8rem;
   }
 
   .projetsGrid {
-        /* Écrase les propriétés Grid (grid-template-columns) */
-        display: flex; 
-        grid-template-columns: none; /* Désactive la grille */
-        margin-top: 0.2rem;
-        /* Force les éléments à rester sur une seule ligne */
-        white-space: nowrap; 
-        width: max-content; 
-        
-        /* Ajout de padding horizontal pour l'esthétique du défilement */
-        padding-left: 1rem;
-        padding-right: 1rem;
-        
-        /* Réutilise l'espacement de la grille (gap) */
-        gap: 2rem; 
-    }
-    
-    /* 3. Configuration des boîtes individuelles (projetBox) */
-    .projetBox {
-        flex-shrink: 0; 
-        flex-basis: 65vw; 
-        height: 100%; 
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
+    /* Écrase les propriétés Grid (grid-template-columns) */
+    display: flex;
+    grid-template-columns: none; /* Désactive la grille */
+    margin-top: 0.2rem;
+    /* Force les éléments à rester sur une seule ligne */
+    white-space: nowrap;
+    width: max-content;
 
-    .projetCont {
-      padding-inline: 2rem;
-      height: auto;
-      padding-block: 2rem;
-      align-items: start;
-    }
-    
+    /* Ajout de padding horizontal pour l'esthétique du défilement */
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-/* contact ---------------------------------------------------------------------- */
+    /* Réutilise l'espacement de la grille (gap) */
+    gap: 2rem;
+  }
 
-.contact{
-  flex-direction: column;
-  justify-content: flex-start; /* Aligner le contenu en haut */
-  align-items: center;
-  padding-inline: 0; /* Pas de padding horizontal sur le conteneur principal */
-  padding-block: 0; /* Pas de padding vertical sur le conteneur principal */
-  min-height: 100vh;
-  overflow-y: auto; /* Activer le défilement uniquement si nécessaire */
-}
+  /* 3. Configuration des boîtes individuelles (projetBox) */
+  .projetBox {
+    flex-shrink: 0;
+    flex-basis: 65vw;
+    height: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 
-#fermeContact{
+  .projetCont {
+    padding-inline: 2rem;
+    height: auto;
+    padding-block: 2rem;
+    align-items: start;
+  }
+
+  /* contact ---------------------------------------------------------------------- */
+
+  .contact {
+    flex-direction: column;
+    justify-content: flex-start; /* Aligner le contenu en haut */
+    align-items: center;
+    padding-inline: 0; /* Pas de padding horizontal sur le conteneur principal */
+    padding-block: 0; /* Pas de padding vertical sur le conteneur principal */
+    min-height: 100vh;
+    overflow-y: auto; /* Activer le défilement uniquement si nécessaire */
+  }
+
+  #fermeContact {
     position: relative;
     cursor: pointer;
     color: var(--another-color);
     top: initial;
     right: initial;
-}
+  }
 
-.nav-brandContact{
+  .nav-brandContact {
     display: flex;
-}
+  }
 
-.navResponsiveContact{
+  .navResponsiveContact {
     display: block;
     width: 100%;
     height: 100%;
@@ -368,134 +359,134 @@
     padding-block: 1rem;
     align-items: center;
     background-color: var(--text-color);
-}
+  }
 
-.header-container{
+  .header-container {
     z-index: 2000;
-}
+  }
 
+  .reseaux,
+  .whatsApp {
+    width: 100%;
+    padding-inline: 2rem; /* Ajouter le padding ici */
+    height: auto; /* Laisser la hauteur s'adapter au contenu */
+    padding-top: 2rem; /* Espace en haut pour ne pas être sous le bouton fermer */
+    padding-bottom: 3rem; /* Espace en bas */
+    border-radius: 0; /* Enlever les coins arrondis en mode colonne */
+  }
 
-.reseaux, .whatsApp{
-  width: 100%;
-  padding-inline: 2rem; /* Ajouter le padding ici */
-  height: auto; /* Laisser la hauteur s'adapter au contenu */
-  padding-top: 2rem; /* Espace en haut pour ne pas être sous le bouton fermer */
-  padding-bottom: 3rem; /* Espace en bas */
-  border-radius: 0; /* Enlever les coins arrondis en mode colonne */
-}
+  .whatsApp > h2 {
+    font-size: 3rem;
+  }
 
-.whatsApp > h2{
-    font-size:3rem
-}
-
-.whatsApp p {
+  .whatsApp p {
     font-size: 1.8rem;
-    margin-bottom:1.5rem;
-}
+    margin-bottom: 1.5rem;
+  }
 
-.formBox:nth-child(1), .formBox:nth-child(2) label {
-    font-size:1.8rem;
-}
+  .formBox:nth-child(1),
+  .formBox:nth-child(2) label {
+    font-size: 1.8rem;
+  }
 
-.formBox:nth-child(1) input{
+  .formBox:nth-child(1) input {
     padding-block: 0.7rem;
     font-size: 1.3rem;
-}
+  }
 
-.formBox:nth-child(2) textarea {
+  .formBox:nth-child(2) textarea {
     padding-block: 0.7rem;
     font-size: 1.3rem;
-}
+  }
 
-.submitButton{
+  .submitButton {
     padding-block: 0.8rem;
     padding-inline: 5rem;
     font-size: 1.5rem;
-}
+  }
 
-.reseaux > h1{
-          font-size: 3rem;
-}
+  .reseaux > h1 {
+    font-size: 3rem;
+  }
 
-.reseaux > p{
-  font-size: 1.5rem;
-}
+  .reseaux > p {
+    font-size: 1.5rem;
+  }
 
-.reseauxPro > h2 {
+  .reseauxPro > h2 {
     margin-top: 0.8rem;
     font-weight: bolder;
     font-size: 2rem;
     color: var(--secondary-color);
-}
+  }
 
-.formBox:nth-child(1) input{
-  width: 14rem;
-}
+  .formBox:nth-child(1) input {
+    width: 14rem;
+  }
 
-/* footer ----------------------------------------------------------------------- */
-    .footer-top {
-      display: flex;
-      justify-content: space-between;
-      /* flex-wrap: wrap; */
-      gap: 2rem;
-      /* padding-bottom: 2rem; */
-      margin-bottom: 1rem;
-      display: flex;
-      flex-direction: column;
-    }
+  /* footer ----------------------------------------------------------------------- */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    /* padding-bottom: 2rem; */
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .footer-separator {
-      width: 100%;
-      /* background-color: 
+  .footer-separator {
+    width: 100%;
+    /* background-color: 
       4A4C5F; */
-      /* align-self: stretch; */
-      height: 5px;
-    }
+    /* align-self: stretch; */
+    height: 5px;
+  }
 
-    .footer-brand-title {
-        font-size: 3.3rem;
-    }
-    
-    .footer-tagline{
-        font-size: 1.875rem;
-    }
+  .footer-brand-title {
+    font-size: 3.3rem;
+  }
 
-    .footer-tagline::before{
-            top: 59%;
+  .footer-tagline {
+    font-size: 1.875rem;
+  }
+
+  .footer-tagline::before {
+    top: 59%;
     width: 23px;
     height: 10px;
-    }
+  }
 
-    .footer-heading{
-        font-size: 2.25rem;
-    }
-    
-    .footer-link{
-        font-size:1.5rem
-    }
+  .footer-heading {
+    font-size: 2.25rem;
+  }
 
-    .social-icon{
-        width: 70px;
-        height: 70px;
-        border:solid 3px ;
-    }
-    
-    .social-icon > i{
-        font-size: 2.5rem;
-    }
+  .footer-link {
+    font-size: 1.5rem;
+  }
 
-    .newsletter-form{
-        max-width:80%;
-        height:5rem;
-    }
+  .social-icon {
+    width: 70px;
+    height: 70px;
+    border: solid 3px;
+  }
 
-    .newsletter-button{
-        width: 60px;
-        height: 60px;
-        right:2px;
-        margin-bottom:2rem
-    }
+  .social-icon > i {
+    font-size: 2.5rem;
+  }
+
+  .newsletter-form {
+    max-width: 80%;
+    height: 5rem;
+  }
+
+  .newsletter-button {
+    width: 60px;
+    height: 60px;
+    right: 2px;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Extra-small screens (smartphones, etc. | max-width: 480px) */
-

@@ -1,73 +1,76 @@
 @media screen and (min-width: 769px) and (max-width: 1199px) {
-    /* Styles pour les écrans 'lg' et plus grands */
+  /* Styles pour les écrans 'lg' et plus grands */
 
-     /* accueil -------------------------------------------------------- */
-    .accueil-content{
-        padding: 0;
-    }
+  /* accueil -------------------------------------------------------- */
+  .accueil-content {
+    padding: 0;
+  }
 
-    .imgContenaire{
-        width: 70%;
-    }
+  .imgContenaire {
+    width: 70%;
+  }
 
-    /* project ------------------------------------------------------- */
+  /* project ------------------------------------------------------- */
 
-    .projetBox > img {
-        width: 190px;
-        object-fit: cover;
-        border-radius: 0.5rem;
-    }
+  .projetBox > img {
+    width: 190px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
 
-    /* skills -------------------------------------------------------- */
+  /* skills -------------------------------------------------------- */
 
-    .skillCont{
-        padding-block: 2rem;
-    }
+  .skillCont {
+    padding-block: 2rem;
+  }
 
-    /* contact --------------------------------------------------------*/
+  /* contact --------------------------------------------------------*/
 
-    .contact{
-        padding-block: 3rem;
-    }
+  .contact {
+    padding-block: 3rem;
+  }
 
-    .reseaux {
-        padding-block: 2rem;
-        padding-inline: 2rem;
-    }
+  .reseaux {
+    padding-block: 2rem;
+    padding-inline: 2rem;
+  }
 
-    .reseaux > p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        margin-top: 0.5rem;
-    }
+  .reseaux > p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+  }
 
-    .reseauxPro > h2, .reseauxPro .liste-reseaux li {
-        margin-top: 1rem;
-    }
+  .reseauxPro > h2,
+  .reseauxPro .liste-reseaux li {
+    margin-top: 1rem;
+  }
 
-    #fermeContact{
-        top: 5rem;
-        right: 6rem;
-    }
+  #fermeContact {
+    top: 5rem;
+    right: 6rem;
+  }
 
-    .whatsApp{
-        padding-block: 2rem;
-        padding-inline: 2rem;
-    } 
+  .whatsApp {
+    padding-block: 2rem;
+    padding-inline: 2rem;
+  }
 
-    .whatsApp > h2, .reseaux > h1{
-        font-size: 1.8rem;
-    }
+  .whatsApp > h2,
+  .reseaux > h1 {
+    font-size: 1.8rem;
+  }
 
-    .formBox:nth-child(1), .formBox:nth-child(2) label {
-        font-size: 1rem;
-    }
+  .formBox:nth-child(1),
+  .formBox:nth-child(2) label {
+    font-size: 1rem;
+  }
 
-    .formBox:nth-child(1){
-        padding-block: 0rem;
-    }
-    
-    .formBox:nth-child(2) textarea {
-        height: 8%;
-    }
+  .formBox:nth-child(1) {
+    padding-block: 0rem;
+  }
+
+  .formBox:nth-child(2) textarea {
+    height: 8%;
+  }
 }
