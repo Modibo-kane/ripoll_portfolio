@@ -32,6 +32,31 @@
       "name": "ChatGPT",
       "image": "/assets/image/ChatGPT.png",
       "progress": "95%"
+    },
+    {
+      "name": "Gemini",
+      "image": "/assets/image/gemini.webp",
+      "progress": "92%"
+    },
+    {
+      "progress": "89%",
+      "name": "Adobe Audition",
+      "image": "/assets/image/adobe-audition.png"
+    },
+    {
+      "progress": "96%",
+      "name": "Audacity",
+      "image": "/assets/image/audacity.png"
+    },
+    {
+      "image": "/assets/image/canvawebp.webp",
+      "name": "Canva",
+      "progress": "90%"
+    },
+    {
+      "progress": "93%",
+      "image": "/assets/image/brand4.png",
+      "name": "Brand24"
     }
   ]
 }
