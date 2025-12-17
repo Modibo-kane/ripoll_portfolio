@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHtmlContent('service-description', data.service_description);
     });
 
-    loadJsonData('_data/services_skills.json', data => {
+    loadJsonData('_data/skills.json', data => {
         const skillsGrid = document.getElementById('skills-grid');
         if (data.skills && skillsGrid) {
             data.skills.forEach(skill => {
