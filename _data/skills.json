@@ -34,11 +34,6 @@
       "progress": "95%"
     },
     {
-      "name": "Dev Web/Mobile",
-      "progress": "89%",
-      "image": "/assets/image/devweb.jpg"
-    },
-    {
       "name": "Gemini",
       "image": "/assets/image/gemini.webp",
       "progress": "92%"
@@ -57,11 +52,6 @@
       "image": "/assets/image/canvawebp.webp",
       "name": "Canva",
       "progress": "90%"
-    },
-    {
-      "progress": "88%",
-      "image": "/assets/image/SEO.jpg",
-      "name": "SEO"
     },
     {
       "progress": "93%",
