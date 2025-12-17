@@ -72,7 +72,7 @@ collections:
                   - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Je veux le même"}
                   - {label: "Lien du bouton", name: "button_link", widget: "string", default: "#"}
 
-  - label: "Services & Outils"
+  - label: "Outils"
     name: "services_skills"
     files:
       - label: "Contenu des services et outils"
@@ -98,6 +98,8 @@ collections:
     folder: "_data/services" # <-- INDIQUE QUE C'EST UNE LISTE DANS UN DOSSIER
     create: true             # <-- PERMET LA CRÉATION VIA LE BOUTON "NEW"
     slug: "{{slug}}"         # Utilise le titre pour générer le nom du fichier
+    extension: "json"        # Indique que les fichiers sont au format JSON
+    identifier_field: "title"  # Utilise le champ 'title' pour afficher le nom dans la liste
     fields:
       - {label: "Titre du Service", name: "title", widget: "string"}
       - {label: "Image du Service", name: "image", widget: "image"}
