@@ -148,7 +148,7 @@ ul{
     width: 50%;
     height: 65%;
     border-radius: 20px;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     position:relative;
     border: solid 5px  var(--secondary-color);
     /* margin-bottom: 20%; */
@@ -385,6 +385,10 @@ ul{
         margin-top: 2rem;
     }
     
+    .projetDescription{
+        text-align: center;
+    }
+
     .btnContProjet{
         margin-top: 0rem;
         /* border: solid 2px var(--secondary-color); */
@@ -552,13 +556,13 @@ ul{
         width: 100%;
         /* margin-bottom: 0.8rem; */
     }
-
+/* 
     .serviceBox > img{
         width: 100%;
         height: 250px;
         object-fit: cover;
         border-radius: 1rem;
-    }
+    } */
 
     .serviceName{
         font-size: 1.1rem;
@@ -610,7 +614,7 @@ ul{
     /* Cible l'image directement dans .serviceBox */
     .serviceBox > img {
         width: 100%;
-        /* height: 100%; */
+        height: 100%;
         object-fit: cover;
         border-radius: 10px;
         transition: transform 0.5s ease-in-out;
@@ -1170,6 +1174,16 @@ footer {
     font-size: 0.9rem;
     color: #8E8F9A; /* Texte légèrement estompé */
     padding-bottom: 1rem;
+}
+
+.footer-bottom a {
+    color: inherit; /* Hérite de la couleur du parent */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--secondary-color); /* Couleur jaune au survol */
 }
 
 .newsletter-form {

@@ -177,6 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHtmlContent('footer-copyright', data.copyright);
 
         const newsletterInput = document.getElementById('newsletter-input');
+        updateTextContent('made-with-love-link', data.made_with_text);
+        updateLinkHref('made-with-love-link', data.made_with_url);
+
         if (newsletterInput) {
             newsletterInput.placeholder = data.newsletter_placeholder;
         }

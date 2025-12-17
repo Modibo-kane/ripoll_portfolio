@@ -1,6 +1,12 @@
 @media screen and (min-width: 769px) and (max-width: 1199px) {
     /* Styles pour les écrans 'lg' et plus grands */
 
+    /* header ----------------------------------------------------------- */
+
+    .brand-name{
+        font-size: 1.475rem;
+    }
+
      /* accueil -------------------------------------------------------- */
     .accueil-content{
         padding: 0;
@@ -8,6 +14,10 @@
 
     .imgContenaire{
         width: 70%;
+    }
+
+    .accueil {
+        height: 50vh;
     }
 
     /* project ------------------------------------------------------- */
@@ -18,10 +28,35 @@
         border-radius: 0.5rem;
     }
 
+    .projetsGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projetCont{
+        width: 100%;
+    }
+
+    /* service --------------------------------------------------------- */
+    .serviceCont{
+        min-height:10vh;
+        height:auto; 
+    }
+
+    .serviceButton {
+        font-size: 1.2rem;
+        border-radius: 11px;
+        padding: 0.2rem 1rem;
+    }
+
     /* skills -------------------------------------------------------- */
 
     .skillCont{
         padding-block: 2rem;
+    }
+    
+    .skillsGrid{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
     }
 
     /* contact --------------------------------------------------------*/
@@ -31,36 +66,63 @@
     }
 
     .reseaux {
-        padding-block: 2rem;
+        padding-top: 5rem;
         padding-inline: 2rem;
     }
 
     .reseaux > p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
         margin-top: 0.5rem;
+        margin-bottom: 4rem;
     }
 
-    .reseauxPro > h2, .reseauxPro .liste-reseaux li {
+    .reseauxPro > h2 {
         margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .reseauxPro .liste-reseaux li {
+        margin-top: 1rem;
+    }
+
+    .reseauxPro .liste-reseaux li .social-icon{
+        width: 70px;
+        height: 70px;
+    }
+
+    .reseauxPro .liste-reseaux li > span{
+        font-size: 1.6rem;
     }
 
     #fermeContact{
         top: 5rem;
         right: 6rem;
+        font-size: 70px;
     }
 
     .whatsApp{
-        padding-block: 2rem;
+        padding-top: 5rem;
         padding-inline: 2rem;
+
     } 
 
+    .whatsApp p{
+        font-size:  2.2rem;
+        margin-bottom: 4rem;
+    }
+
+    .whatsApp form {
+        min-height: 50%;
+    }
+
     .whatsApp > h2, .reseaux > h1{
-        font-size: 1.8rem;
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
     }
 
     .formBox:nth-child(1), .formBox:nth-child(2) label {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .formBox:nth-child(1){
@@ -68,6 +130,24 @@
     }
     
     .formBox:nth-child(2) textarea {
-        height: 8%;
+        /* height: 8%; */
+        font-size: 1.5rem;
+        padding-block: 1.5rem;
+    }
+
+    .formBox:nth-child(1) input{
+        width: 18.5rem;
+        height: 3rem;
+    }
+
+    .submitButton {
+        font-size: 1.5rem;
+        padding-inline: 4rem;
+        padding-block: 0.8rem;
+    }
+
+    /* cv telechargement ------------------------------------------------*/
+    .download-menu-element {
+        height: 23%;
     }
 }
