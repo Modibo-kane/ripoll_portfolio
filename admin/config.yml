@@ -19,12 +19,11 @@ public_folder: "/assets/image"
 # Définition des COLLECTIONS (Groupes de contenu que l'on peut éditer)
 # ----------------------------------------------------------------------
 collections:
-  - name: "settings"
-    label: "Paramètres du Site"
-    # Ce type de collection permet d'éditer un seul fichier qui contient tous les réglages
+  - label: "Section Accueil"
+    name: "home"
     files:
-      - label: "Section Accueil"
-        name: "home"
+      - label: "Contenu de l'accueil"
+        name: "home_content"
         file: "_data/home.json"
         fields:
           - {label: "Nom de la marque (Header)", name: "brand_name", widget: "string", default: "Ripoll Darcia"}
@@ -39,15 +38,21 @@ collections:
           - {label: "Fichier CV (Image)", name: "cv_jpg", widget: "file", media_folder: "assets/image"}
           - {label: "Image de Profil", name: "profile_image", widget: "image", media_folder: "assets/image"}
 
-      - label: "Navigation"
-        name: "navigation"
+  - label: "Navigation"
+    name: "navigation"
+    files:
+      - label: "Liens de navigation"
+        name: "navigation_links"
         file: "_data/navigation.json"
         fields:
           - {label: "Texte du bouton Contact", name: "contact_text", widget: "string", default: "Contactez-moi"}
           - {label: "Liens de navigation", name: "links", widget: "list", fields: [{label: "Texte", name: "text", widget: "string"}, {label: "URL", name: "url", widget: "string"}]}
 
-      - label: "Section Projets"
-        name: "projects"
+  - label: "Section Projets"
+    name: "projects"
+    files:
+      - label: "Contenu des projets"
+        name: "projects_content"
         file: "_data/projects.json"
         fields:
           - {label: "Titre Section Projets", name: "project_title", widget: "string", default: "Mes Projets"}
@@ -67,8 +72,11 @@ collections:
                   - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Je veux le même"}
                   - {label: "Lien du bouton", name: "button_link", widget: "string", default: "#"}
 
-      - label: "Mes Outils de Travail et mes Services"
-        name: "services_skills"
+  - label: "Services & Outils"
+    name: "services_skills"
+    files:
+      - label: "Contenu des services et outils"
+        name: "services_skills_content"
         file: "_data/services_skills.json"
         fields:
           - {label: "Titre Section Services", name: "service_title", widget: "string", default: "Mes Services"}
@@ -92,8 +100,11 @@ collections:
               - {label: "Image de l'outil", name: "image", widget: "image"}
               - {label: "Pourcentage (ex: 95%)", name: "progress", widget: "string"}
 
-      - label: "Pied de page & Contact"
-        name: "footer_contact"
+  - label: "Pied de page & Contact"
+    name: "footer_contact"
+    files:
+      - label: "Contenu du pied de page"
+        name: "footer_contact_content"
         file: "_data/footer_contact.json"
         fields:
           - {label: "Titre Footer", name: "footer_title", widget: "string", default: "Ripoll"}
