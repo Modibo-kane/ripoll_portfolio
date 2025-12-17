@@ -383,6 +383,7 @@ ul{
         background-color: #343c4c;
         border-left: solid 4px var(--secondary-color);
         margin-top: 2rem;
+        width: 100%;
     }
     
     .projetDescription{
@@ -447,7 +448,7 @@ ul{
     }
 
     .projetBox > img{
-        width: 220px;
+        width: 235px;
         object-fit: contain;
         height: 100%;
         border-radius: 1rem;
@@ -614,7 +615,7 @@ ul{
     /* Cible l'image directement dans .serviceBox */
     .serviceBox > img {
         width: 100%;
-        height: 25vh;
+        height: 35vh;
         object-fit: cover;
         border-radius: 10px;
         transition: transform 0.5s ease-in-out;
@@ -1067,7 +1068,7 @@ footer {
     /* border-top: 2px solid var(--secondary-color); */
     /* margin-top: 4rem; */
     padding-inline:2rem ;
-    padding-top: 3rem;
+    padding-top: 1rem;
     color: var(--text-color);
     display: flex;
     justify-content: center;
@@ -1077,7 +1078,7 @@ footer {
     width: 100%;
     margin-inline: auto;
     padding-inline: 1.5rem; /* px-6 */
-    padding-block: 2rem; /* py-8 */
+    padding-block: 1rem; /* py-8 */
 }
 
 .footer-content {
