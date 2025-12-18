@@ -1062,8 +1062,23 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 150px;
+  flex-direction: column;
   overflow: hidden;
+}
+
+#menuClients .partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#menuClients h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 2.5rem;
 }
 
 #menuClients img {

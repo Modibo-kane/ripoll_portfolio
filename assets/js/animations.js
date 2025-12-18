@@ -26,11 +26,11 @@ window.addEventListener("load", () => {
   const loop = horizontalLoop("#menuClients .partner-brand", {
     repeat: -1, // Infini
     speed: 0.4, // Vitesse (plus haut = plus vite)
-    paddingRight: 150, // Doit correspondre à votre margin-right CSS
+    paddingRight: 140, // Doit correspondre à votre margin-right CSS
   });
 
   // Pause au survol de la souris
-  const carousel = document.querySelector("#menuClients");
+  const carousel = document.querySelector("#menuClients .partners");
   if (carousel) {
     carousel.addEventListener("mouseenter", () => loop.pause());
     carousel.addEventListener("mouseleave", () => loop.play());
