@@ -1,5 +1,6 @@
 {
   "button_text": "Demander ce service",
   "title": "Rédaction d'article ",
+  "order": 6,
   "image": "/assets/image/redaction.jpg"
 }

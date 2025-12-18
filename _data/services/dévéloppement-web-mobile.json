@@ -1,5 +1,6 @@
 {
   "button_text": "Demander ce service",
   "title": "Dévéloppement web/mobile",
+  "order": 3,
   "image": "/assets/image/devweb.jpg"
 }

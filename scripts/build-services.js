@@ -19,6 +19,9 @@ try {
         combinedServices.push(JSON.parse(fileContent));
     });
 
+    // Trier les services en fonction du champ "order"
+    combinedServices.sort((a, b) => (a.order || 999) - (b.order || 999));
+
     // Écrire le tableau combiné dans un nouveau fichier JSON
     fs.writeFileSync(outputFile, JSON.stringify(combinedServices, null, 2));
 

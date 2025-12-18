@@ -110,6 +110,7 @@ collections:
     identifier_field: "title"  # Utilise le champ 'title' pour afficher le nom dans la liste
     fields:
       - {label: "Titre du Service", name: "title", widget: "string"}
+      - {label: "Ordre d'affichage", name: "order", widget: "number", default: 10}
       - {label: "Image du Service", name: "image", widget: "image"}
       - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Demander ce service"}
       - {label: "Description détaillée (optionnel)", name: "description", widget: "markdown", required: false}

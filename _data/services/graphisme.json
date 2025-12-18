@@ -1,5 +1,6 @@
 {
   "button_text": "Demander ce service",
   "title": "Graphisme ",
+  "order": 4,
   "image": "/assets/image/graphisme.jpg"
 }
