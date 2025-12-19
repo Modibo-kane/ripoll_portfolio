@@ -11,6 +11,20 @@ h2 {
   text-align: center;
 }
 
+#success-message {
+    background-color: rgba(46, 204, 113, 0.1);
+    border: 1px solid #2ecc71;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 :root {
   --primary-color: #1f2235;
   --secondary-color: #ffcd00;
