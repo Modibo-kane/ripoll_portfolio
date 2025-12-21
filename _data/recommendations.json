@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Figma",
+    "description": "L'outil de design collaboratif que j'utilise pour tous mes projets UI/UX.",
+    "imageUrl": "assets/image/figma.png",
+    "affiliateUrl": "#figma-affiliate-link"
+  },
+  {
+    "name": "Adobe Photoshop",
+    "description": "Indispensable pour la retouche photo et la création graphique avancée.",
+    "imageUrl": "assets/image/photoshop.png",
+    "affiliateUrl": "#photoshop-affiliate-link"
+  },
+  {
+    "name": "Canva",
+    "description": "Parfait pour créer rapidement des visuels percutants pour les réseaux sociaux.",
+    "imageUrl": "assets/image/canvawebp.webp",
+    "affiliateUrl": "#canva-affiliate-link"
+  }
+]

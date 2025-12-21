@@ -402,3 +402,23 @@
     }
 
 }
+
+/* responsive recommendations section */
+#recommendations .skillsGrid {
+    padding-block: 1rem;
+}
+
+#recommendations .recommendation-card-link {
+    flex-shrink: 0;
+    flex-basis: 70vw; /* A bit wider to accommodate more text */
+}
+
+#recommendations .skillBox {
+    height: auto; /* Let the height grow with the content */
+    min-height: 250px; /* Maintain a minimum height for consistency */
+    justify-content: flex-start; /* Align content to the top */
+}
+
+#recommendations .recommendation-description {
+    white-space: normal; /* Allow text to wrap */
+}
