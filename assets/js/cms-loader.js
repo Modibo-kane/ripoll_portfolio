@@ -5,38 +5,39 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) {
                 throw new Error(`Erreur de chargement du fichier ${url}: ${response.statusText}`);
             }
-            const data = await response.json();
-            callback(data);
+            const dataJson = await response.json();
+            callback(dataJson);
         } catch (error) {
             console.error(error);
         }
     };
 
     const updateTextContent = (elementId, text) => {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.textContent = text;
+        const elementText = document.getElementById(elementId);
+        if (elementText) {
+            elementText.textContent = text;
         }
     };
 
     const updateHtmlContent = (elementId, html) => {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.innerHTML = html;
+        const elementHtml = document.getElementById(elementId);
+        if (elementHtml) {
+            const purifyHtml = DOMPurify.sanitize(html)
+            elementHtml.innerHTML = purifyHtml;
         }
     };
 
     const updateImageSrc = (elementId, src) => {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.src = src;
+        const elementImage = document.getElementById(elementId);
+        if (elementImage) {
+            elementImage.src = src;
         }
     };
 
     const updateLinkHref = (elementId, href) => {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.href = href;
+        const elementHref = document.getElementById(elementId);
+        if (elementHref) {
+            elementHref.href = href;
         }
     };
 
@@ -191,11 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.footer_links && footerLinksNav) {
             footerLinksNav.innerHTML = `<h4 class="footer-heading" id="footer-heading-nav">${data.nav_title}</h4>`;
             data.footer_links.forEach(link => {
-                const a = document.createElement('a');
-                a.href = link.url;
-                a.className = 'footer-link';
-                a.textContent = link.text;
-                footerLinksNav.appendChild(a);
+                const baliseA = document.createElement('a');
+                baliseA.href = link.url;
+                baliseA.className = 'footer-link';
+                baliseA.textContent = link.text;
+                footerLinksNav.appendChild(baliseA);
             });
         }
     });

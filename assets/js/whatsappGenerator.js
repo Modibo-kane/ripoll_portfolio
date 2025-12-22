@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const nom = document.getElementById('name').value.trim()
         const message = document.getElementById('message').value.trim()
         
-        // let fullMessage = `Nom: ${nom}\n Message: ${message}`
         let fullMessage = 
         `Nom:  ${nom}\n` +  // Double saut de ligne ici (\n\n) est plus fiable
         `Message: \n ${message}`;
