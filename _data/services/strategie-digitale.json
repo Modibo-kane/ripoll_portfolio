@@ -3,5 +3,6 @@
   "image": "/assets/image/stratégie.jpg",
   "order0": 2,
   "button_text": "Demander ce service",
-  "order": 2
+  "order": 2,
+  "category": "Expertise"
 }
