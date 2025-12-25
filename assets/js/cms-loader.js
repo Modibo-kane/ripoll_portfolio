@@ -121,7 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Charge les services depuis le fichier JSON combiné
     loadJsonData('_data/services-combined.json', services => {
         const coreGrid = document.getElementById('core-services-grid');
-        const partnerGrid = document.getElementById('partner-services-grid');
+        const partnerDigitalGrid = document.getElementById('partner-digital-grid');
+        const partnerOtherGrid = document.getElementById('partner-other-grid');
 
         if (services) {
             // Fonction pour créer une carte de service
@@ -138,13 +139,23 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             services.forEach(service => {
-                // Logique de tri : soit par le champ 'category' du CMS, soit par déduction (fallback)
-                const isPartner = service.category === 'partenaire' || 
-                                  (!service.category && (service.title.toLowerCase().includes('web') || service.title.toLowerCase().includes('seo') || service.title.toLowerCase().includes('mobile')));
+                // Logique de tri basée sur la nouvelle configuration
+                let category = service.category ? service.category.toLowerCase() : 'expertise';
+                let subCategory = service.sub_category ? service.sub_category.toLowerCase() : '';
+
+                // Compatibilité avec l'ancienne configuration (au cas où)
+                if (category === 'partenaire_numerique') { category = 'partenaire'; subCategory = 'numérique'; }
+                if (category === 'partenaire_autre') { category = 'partenaire'; subCategory = 'autre'; }
                 
-                if (isPartner && partnerGrid) {
-                    partnerGrid.appendChild(createServiceCard(service));
+                if (category === 'partenaire') {
+                    if (subCategory === 'autre' && partnerOtherGrid) {
+                        partnerOtherGrid.appendChild(createServiceCard(service));
+                    } else if (partnerDigitalGrid) {
+                        partnerDigitalGrid.appendChild(createServiceCard(service));
+                    }
                 } else if (coreGrid) {
+                    // Fallback: si c'est 'expertise' ou l'ancien tag 'partenaire' (au cas où), on met dans core ou on adapte
+                    // Ici on assume que 'expertise' va dans core.
                     coreGrid.appendChild(createServiceCard(service));
                 }
             });
@@ -160,10 +171,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTextContent('serviceTitrePrincipale', data.service_title);
         updateTextContent('span-service', data.service_subtitle);
         updateHtmlContent('service-description', data.service_description);
-        updateTextContent('core-services-title', data.core_title);
         updateTextContent('core-services-desc', data.core_desc);
-        updateTextContent('partner-services-title', data.partner_title);
-        updateTextContent('partner-services-desc', data.partner_desc);
+        
+        updateTextContent('partner-main-title', data.partner_main_title);
+        updateTextContent('partner-main-subtitle', data.partner_main_subtitle);
+        updateHtmlContent('partner-main-desc', data.partner_main_desc);
+        
+        updateTextContent('partner-digital-title', data.partner_digital_title);
+        updateTextContent('partner-digital-desc', data.partner_digital_desc);
+        updateTextContent('partner-other-title', data.partner_other_title);
+        updateTextContent('partner-other-desc', data.partner_other_desc);
     });
 
     loadJsonData('_data/skills.json', data => {

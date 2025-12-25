@@ -84,8 +84,13 @@ collections:
           - {label: "Description Section Services", name: "service_description", widget: "markdown", default: "Description par défaut des services."}
           - {label: "Titre Sous-section Expertise", name: "core_title", widget: "string", default: "Mon Expertise"}
           - {label: "Description Sous-section Expertise", name: "core_desc", widget: "string", default: "Ce que je réalise pour vous."}
-          - {label: "Titre Sous-section Partenaires", name: "partner_title", widget: "string", default: "Services Partenaires"}
-          - {label: "Description Sous-section Partenaires", name: "partner_desc", widget: "string", default: "Des experts de confiance."}
+          - {label: "Titre Section Partenaires", name: "partner_main_title", widget: "string", default: "Services Partenaires"}
+          - {label: "Sous-titre Section Partenaires", name: "partner_main_subtitle", widget: "string", default: "Collaborations"}
+          - {label: "Description Section Partenaires", name: "partner_main_desc", widget: "markdown", default: "Description globale partenaires."}
+          - {label: "Titre Sous-section Numérique", name: "partner_digital_title", widget: "string", default: "Services Numériques"}
+          - {label: "Description Sous-section Numérique", name: "partner_digital_desc", widget: "string", default: "Dev, Finance, SEO..."}
+          - {label: "Titre Sous-section Autres", name: "partner_other_title", widget: "string", default: "Autres Services"}
+          - {label: "Description Sous-section Autres", name: "partner_other_desc", widget: "string", default: "Menuiserie, Maçonnerie..."}
 
   - label: "Section Outils"
     name: "skills"
@@ -112,13 +117,22 @@ collections:
     slug: "{{slug}}"         # Utilise le titre pour générer le nom du fichier
     extension: "json"        # Indique que les fichiers sont au format JSON
     identifier_field: "title"  # Utilise le champ 'title' pour afficher le nom dans la liste
+    summary: "{{title}} [{{category}} - {{sub_category}}]" # Affiche la catégorie dans la liste
+    view_groups:
+      - label: "Par Catégorie"
+        field: "category"
     fields:
       - {label: "Titre du Service", name: "title", widget: "string"}
       - label: "Catégorie du Service"
         name: "category"
         widget: "select"
-        options: ["expertise", "partenaire"]
-        default: "expertise"
+        options: ["Expertise", "Partenaire"]
+        default: "Expertise"
+      - label: "Sous-service (Si Partenaire)"
+        name: "sub_category"
+        widget: "select"
+        options: ["Numérique", "Autre"]
+        required: false
       - {label: "Ordre d'affichage", name: "order", widget: "number", default: 10}
       - {label: "Image du Service", name: "image", widget: "image"}
       - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Demander ce service"}

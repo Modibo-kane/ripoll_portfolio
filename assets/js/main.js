@@ -1,51 +1,53 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-    const faBar = document.getElementById('faBar');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const sortir= document.getElementById('out')
+    const faBar = document.getElementById("faBar");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const sortir= document.getElementById("out")
 
-    faBar.addEventListener('click', () => {
-        mobileMenu.classList.toggle('open');
+    faBar.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
     });
     
-    // Utilisation de la délégation d'événements pour gérer les clics sur les liens dynamiques
-    mobileMenu.addEventListener('click', (e) => {
-      // On vérifie si l'élément cliqué (e.target) a la classe 'px-4'
-      if (e.target.classList.contains('px-4')) {
-        mobileMenu.classList.remove('open');
+    // Utilisation de la délégation d"événements pour gérer les clics sur les liens dynamiques
+    mobileMenu.addEventListener("click", (e) => {
+      // On vérifie si l"élément cliqué (e.target) a la classe "px-4"
+      if (e.target.classList.contains("px-4")) {
+        mobileMenu.classList.remove("open");
       }
     });
 
-    sortir.addEventListener('click', ()=>{
-        mobileMenu.classList.toggle('open');
+    sortir.addEventListener("click", ()=>{
+        mobileMenu.classList.toggle("open");
         
     })
 
 
     // pour le contacte
     const contactCont= document.getElementById("contactCont") // element à faire apparaître et element2 pour sortir
-    const sortirContact = document.getElementById('fermeContact') // element1 pour sortir
-    const messageTextarea = document.getElementById('message'); // Le textarea du formulaire
+    const sortirContact = document.getElementById("fermeContact") // element1 pour sortir
+    const messageTextarea = document.getElementById("message"); // Le textarea du formulaire
     const body = document.body;
 
-    // Utilisation de la délégation d'événements pour tous les boutons .talk
-    body.addEventListener('click', (e) => {
+    // Utilisation de la délégation d"événements pour tous les boutons .talk
+    body.addEventListener("click", (e) => {
       const clickedElement = e.target;
 
-      // On vérifie si l'élément cliqué a la classe 'talk'
-      if (clickedElement.classList.contains('talk')) {
+      // On vérifie si l"élément cliqué a la classe "talk"
+      if (clickedElement.classList.contains("talk")) {
         e.preventDefault(); // Empêche le comportement par défaut (ex: navigation)
         e.stopPropagation(); // Empêche le clic de se propager
 
-        const serviceCard = clickedElement.closest('.serviceBox');
-        const projectCard = clickedElement.closest('.projetBox');
+        const serviceCard = clickedElement.closest(".serviceBox");
+        const projectCard = clickedElement.closest(".projetBox");
         let prefilledMessage = "";
 
         if (serviceCard) {
-          const serviceName = serviceCard.querySelector('.serviceName').textContent;
-          prefilledMessage = `Bonjour, je suis intéressé(e) par votre service "${serviceName}" et j'aimerais en savoir plus.`;
+          const serviceName = serviceCard.querySelector(".serviceName").textContent;
+          prefilledMessage = `Bonjour, je suis intéressé(e) par votre service "${serviceName}" et j"aimerais en savoir plus.`;
         } else if (projectCard) {
-          const projectName = projectCard.querySelector('.projetName').textContent;
-          prefilledMessage = `Bonjour, j'ai beaucoup aimé votre projet "${projectName}" et j'aimerais discuter d'un projet similaire.`;
+          const projectName = projectCard.querySelector(".projetName").textContent;
+          prefilledMessage = `Bonjour, j"ai beaucoup aimé votre projet "${projectName}" et j"aimerais discuter d"un projet similaire.`;
+        } else if (clickedElement.id === "btn-contact-service") {
+          prefilledMessage = "Bonjour, je souhaite devenir partenaire ou obtenir plus d'informations sur vos services de collaboration.";
         }
 
         // Remplir le textarea et ouvrir la modale
@@ -55,7 +57,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
       }
     });
 
-    sortirContact.addEventListener('click', () => {
+    sortirContact.addEventListener("click", () => {
       contactCont.classList.remove("open");
       body.classList.remove("no-scroll");
     });
