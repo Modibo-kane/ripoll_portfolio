@@ -1,6 +1,7 @@
 {
   "button_text": "Demander ce service",
   "title": "Montage Vidéo",
-  "order": 5,
-  "image": "/assets/image/montagevideo.jpg"
+  "order": 6,
+  "image": "/assets/image/montagevideo.jpg",
+  "category": "Expertise"
 }
