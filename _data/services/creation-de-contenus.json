@@ -2,5 +2,6 @@
   "title": "Création de Contenus",
   "order": 1,
   "image": "/assets/image/contenu.jpg",
-  "button_text": "Demander ce service"
+  "button_text": "Demander ce service",
+  "category": "Expertise"
 }
