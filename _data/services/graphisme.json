@@ -1,6 +1,7 @@
 {
   "button_text": "Demander ce service",
   "title": "Graphisme ",
-  "order": 4,
-  "image": "/assets/image/graphisme.jpg"
+  "order": 3,
+  "image": "/assets/image/graphisme.jpg",
+  "category": "Expertise"
 }
