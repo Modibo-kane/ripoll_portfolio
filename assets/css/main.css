@@ -899,21 +899,12 @@ ul {
 } */
 
 .rp {
-  /* display: flex; */
-  display: inline-flex;
-  font-weight: bold;
-  font-size: 1rem; /* text-xl */
+  display: inline-block;
   width: 35px;
   height: 35px;
-  background-color: var(--secondary-color);
-  color: white;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   cursor: pointer;
-  /* padding-block: 1.5%; */
-
-  /* border-radius: 50%; */
+  object-fit: cover;
 }
 
 .px-4:hover {

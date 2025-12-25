@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         const serviceCard = clickedElement.closest(".serviceBox");
         const projectCard = clickedElement.closest(".projetBox");
-        let prefilledMessage = "";
+        let prefilledMessage = "Je souhaite obtenir un devis pour la gestion de ma communication digitale.";
 
         if (serviceCard) {
           const serviceName = serviceCard.querySelector(".serviceName").textContent;
@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         } else if (projectCard) {
           const projectName = projectCard.querySelector(".projetName").textContent;
           prefilledMessage = `Bonjour, j"ai beaucoup aimé votre projet "${projectName}" et j"aimerais discuter d"un projet similaire.`;
-         }// else if (clickedElement.id === "btn-contact-service") {
-        //   prefilledMessage = "Bonjour, je souhaite devenir partenaire ou obtenir plus d'informations sur vos services de collaboration.";
-        // }
+         }
 
         // Remplir le textarea et ouvrir la modale
         if(messageTextarea) messageTextarea.value = prefilledMessage;
