@@ -191,15 +191,12 @@
 
     .serviceName{
         font-size: 0.8rem;
+        white-space: normal;
     }
 
     .serviceGridCore{
         padding-block: 1rem;
         padding-inline: 1rem;
-    }
-
-    .serviceName{
-        font-size: 0.8rem;
     }
 
 /* .partnerCont -------------------------------------------------------------------- */
