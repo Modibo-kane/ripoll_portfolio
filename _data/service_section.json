@@ -1,14 +1,14 @@
 {
-  "service_title": "Mes Services",
-  "service_subtitle": "Stratégiques",
-  "service_description": "Je propose une gamme complète de services conçus pour transformer votre présence en ligne. De la création de contenus engageants à la mise en place de stratégies digitales performantes, mon objectif est de vous fournir des solutions sur mesure qui génèrent des résultats concrets.",
-  "core_title": "Mon Expertise",
-  "core_desc": "Stratégie, Création de contenu & SMM",
-  "partner_main_title": "Réseau de Partenaires",
-  "partner_main_subtitle": "Experts",
   "partner_main_desc": "Pour compléter mon offre, je m'entoure d'experts qualifiés.",
-  "partner_digital_title": "Services Numériques",
-  "partner_digital_desc": "Développement Web, SEO, Finance...",
+  "service_subtitle": "Stratégiques",
+  "partner_main_subtitle": "Experts",
+  "partner_main_title": "Réseau de Partenaires",
+  "service_title": "Mes Services",
+  "partner_digital_desc": " ",
+  "core_desc": "Stratégie, Création de contenu & SMM",
+  "service_description": "Je propose une gamme complète de services conçus pour transformer votre présence en ligne. De la création de contenus engageants à la mise en place de stratégies digitales performantes, mon objectif est de vous fournir des solutions sur mesure qui génèrent des résultats concrets.",
   "partner_other_title": "Autres Services",
-  "partner_other_desc": "Menuiserie, BTP, Artisanat..."
+  "partner_other_desc": " ",
+  "core_title": "Mon Expertise",
+  "partner_digital_title": "Services Numériques"
 }
