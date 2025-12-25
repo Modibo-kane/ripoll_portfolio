@@ -8,7 +8,7 @@ backend:
 publish_mode: editorial_workflow
 
 # ----------------------------------------------------------------------
-# NOUVELLE CONFIGURATION REQUISE POUR LES IMAGES
+# NOUVELLE  CONFIGURATION REQUISE POUR LES IMAGES
 # ----------------------------------------------------------------------
 # 1. Où les fichiers seront stockés dans votre dépôt
 media_folder: "assets/image" 
@@ -82,6 +82,10 @@ collections:
           - {label: "Titre Section Services", name: "service_title", widget: "string", default: "Mes Services"}
           - {label: "Sous-titre Section Services", name: "service_subtitle", widget: "string", default: "Stratégiques"}
           - {label: "Description Section Services", name: "service_description", widget: "markdown", default: "Description par défaut des services."}
+          - {label: "Titre Sous-section Expertise", name: "core_title", widget: "string", default: "Mon Expertise"}
+          - {label: "Description Sous-section Expertise", name: "core_desc", widget: "string", default: "Ce que je réalise pour vous."}
+          - {label: "Titre Sous-section Partenaires", name: "partner_title", widget: "string", default: "Services Partenaires"}
+          - {label: "Description Sous-section Partenaires", name: "partner_desc", widget: "string", default: "Des experts de confiance."}
 
   - label: "Section Outils"
     name: "skills"
@@ -110,6 +114,11 @@ collections:
     identifier_field: "title"  # Utilise le champ 'title' pour afficher le nom dans la liste
     fields:
       - {label: "Titre du Service", name: "title", widget: "string"}
+      - label: "Catégorie du Service"
+        name: "category"
+        widget: "select"
+        options: ["expertise", "partenaire"]
+        default: "expertise"
       - {label: "Ordre d'affichage", name: "order", widget: "number", default: 10}
       - {label: "Image du Service", name: "image", widget: "image"}
       - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Demander ce service"}

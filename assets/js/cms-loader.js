@@ -114,15 +114,18 @@ document.addEventListener('DOMContentLoaded', () => {
             // on appelle la fonction qui attache les effets de survol.
             if (typeof initializeProjectHoverEffects === 'function') {
                 initializeProjectHoverEffects();
-            }
+            } 
         }
     });
 
     // Charge les services depuis le fichier JSON combiné
     loadJsonData('_data/services-combined.json', services => {
-        const serviceGrid = document.getElementById('service-grid');
-        if (services && serviceGrid) {
-            services.forEach(service => {
+        const coreGrid = document.getElementById('core-services-grid');
+        const partnerGrid = document.getElementById('partner-services-grid');
+
+        if (services) {
+            // Fonction pour créer une carte de service
+            const createServiceCard = (service) => {
                 const serviceBox = document.createElement('div');
                 serviceBox.className = 'serviceBox';
                 serviceBox.innerHTML = `
@@ -131,7 +134,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 class="serviceName">${service.title}</h3>
                         <span class="serviceButton talk">${service.button_text || 'Demander ce service'}</span>
                     </div>`;
-                serviceGrid.appendChild(serviceBox);
+                return serviceBox;
+            };
+
+            services.forEach(service => {
+                // Logique de tri : soit par le champ 'category' du CMS, soit par déduction (fallback)
+                const isPartner = service.category === 'partenaire' || 
+                                  (!service.category && (service.title.toLowerCase().includes('web') || service.title.toLowerCase().includes('seo') || service.title.toLowerCase().includes('mobile')));
+                
+                if (isPartner && partnerGrid) {
+                    partnerGrid.appendChild(createServiceCard(service));
+                } else if (coreGrid) {
+                    coreGrid.appendChild(createServiceCard(service));
+                }
             });
 
             // Initialiser les effets de survol une fois tout chargé
@@ -145,6 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTextContent('serviceTitrePrincipale', data.service_title);
         updateTextContent('span-service', data.service_subtitle);
         updateHtmlContent('service-description', data.service_description);
+        updateTextContent('core-services-title', data.core_title);
+        updateTextContent('core-services-desc', data.core_desc);
+        updateTextContent('partner-services-title', data.partner_title);
+        updateTextContent('partner-services-desc', data.partner_desc);
     });
 
     loadJsonData('_data/skills.json', data => {

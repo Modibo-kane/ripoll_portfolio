@@ -545,6 +545,41 @@ ul {
   max-width: 600px;
 }
 
+.service-subsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.subsection-title {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subsection-desc {
+  text-align: center;
+  color: #b0b2c3;
+  margin-bottom: 2rem;
+  font-style: italic;
+  max-width: 600px;
+}
+
+.service-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--secondary-color), rgba(255, 255, 255, 0));
+  margin: 1rem 0 3rem 0;
+  width: 60%;
+  opacity: 0.5;
+}
+
 .serviceGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
