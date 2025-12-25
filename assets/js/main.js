@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         } else if (projectCard) {
           const projectName = projectCard.querySelector(".projetName").textContent;
           prefilledMessage = `Bonjour, j"ai beaucoup aimé votre projet "${projectName}" et j"aimerais discuter d"un projet similaire.`;
-        } else if (clickedElement.id === "btn-contact-service") {
-          prefilledMessage = "Bonjour, je souhaite devenir partenaire ou obtenir plus d'informations sur vos services de collaboration.";
-        }
+         }// else if (clickedElement.id === "btn-contact-service") {
+        //   prefilledMessage = "Bonjour, je souhaite devenir partenaire ou obtenir plus d'informations sur vos services de collaboration.";
+        // }
 
         // Remplir le textarea et ouvrir la modale
         if(messageTextarea) messageTextarea.value = prefilledMessage;
