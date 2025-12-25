@@ -185,6 +185,29 @@
         position: relative; /* Indispensable pour le positionnement absolu de l'enfant */
     }
 
+    .serviceButton{
+        font-size:0.8rem; 
+    }
+
+    .serviceName{
+        font-size: 0.8rem;
+    }
+
+    .serviceGridCore{
+        padding-block: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .serviceName{
+        font-size: 0.8rem;
+    }
+
+/* .partnerCont -------------------------------------------------------------------- */
+
+.partnerCont{
+    padding-inline: 2rem;
+}
+
 /* skills -------------------------------------------------------------------------- */
 
   .skillTitle {

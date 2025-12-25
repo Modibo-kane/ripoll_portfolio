@@ -1144,6 +1144,7 @@ ul {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  background-color: var(--another-color);
 }
 
 #menuClients .partners {
