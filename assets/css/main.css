@@ -900,8 +900,8 @@ ul {
 
 .rp {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
