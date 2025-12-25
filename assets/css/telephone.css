@@ -177,7 +177,8 @@
     }
     .serviceBox {
         flex-shrink: 0; 
-        flex-basis: 65vw;
+        flex-basis: 60vw;
+        width: 13rem;
         /* height: 100%; */ /* On retire la hauteur fixe qui cause le problème */
         height: 250px; /* On donne une hauteur fixe comme sur desktop */
         display: flex; /* Assure que le contenu est bien géré par flexbox */
