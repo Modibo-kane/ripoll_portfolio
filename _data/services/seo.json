@@ -1,6 +1,7 @@
 {
   "button_text": "Demander ce service",
   "title": "SEO",
-  "order": 7,
-  "image": "/assets/image/SEO.jpg"
+  "order": 2,
+  "image": "/assets/image/SEO.jpg",
+  "category": "partenaire"
 }
