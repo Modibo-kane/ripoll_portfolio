@@ -317,7 +317,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   padding-inline: 4rem;
-  background-color: var(--primary-color); /* Changé pour respecter l'alternance après Partenaires (qui sera 'another') */
+  background-color: var(--another-color); /* Changé pour respecter l'alternance après Partenaires (qui sera 'another') */
   padding-block: 2rem;
 }
 
@@ -538,7 +538,7 @@ ul {
   justify-content: center;
   padding-inline: 4rem;
   padding-block: 4rem;
-  background-color: var(--another-color);
+  background-color: var(--primary-color);
   min-height: 100vh;
 }
 
