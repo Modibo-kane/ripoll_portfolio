@@ -74,6 +74,12 @@
           "name": "Conseil National du Patronat du Mali (CNPM)",
           "button_text": "Je veux le même",
           "button_link": "#",
+          "image": "/assets/image/dfa1.jpeg"
+        },
+        {
+          "name": "Conseil National du Patronat du Mali (CNPM)",
+          "button_text": "Je veux le même",
+          "button_link": "#",
           "image": "/assets/image/dfa7.jpeg"
         },
         {
@@ -81,12 +87,6 @@
           "button_text": "Je veux le même",
           "button_link": "#",
           "image": "/assets/image/dfa3.jpeg"
-        },
-        {
-          "name": "Conseil National du Patronat du Mali (CNPM)",
-          "button_text": "Je veux le même",
-          "button_link": "#",
-          "image": "/assets/image/dfa1.jpeg"
         }
       ]
     }
