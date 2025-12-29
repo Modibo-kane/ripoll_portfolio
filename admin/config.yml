@@ -28,8 +28,8 @@ collections:
         fields:
           - {label: "Nom de la marque (Header)", name: "brand_name", widget: "string", default: "Ripoll Darcia"}
           - {label: "Titre principal (H1)", name: "main_title", widget: "string", default: "Darcia Ripoll"}
-          - {label: "Slogan / Sous-titre", name: "tagline", widget: "string", default: "| Stratège de Contenus & Performance Web"}
-          - {label: "Description d'accueil", name: "home_description", widget: "markdown", default: "Obtenez un service web qui marquera durablement les esprits de votre public !"}
+          - {label: "Slogan / Sous-titre", name: "tagline", widget: "string", default: "| Chargé de Communication Digitale & Médias"}
+          - {label: "Description d'accueil", name: "home_description", widget: "markdown", default: "Réseaux Sociaux, Site web, Campagnes Ads & Newsletter"}
           - {label: "Nom complet (Info)", name: "full_name", widget: "string", default: "Darcia Ripoll"}
           - {label: "Email (Info & Contact)", name: "email", widget: "string", default: "ripollbis@gmail.com"}
           - {label: "Téléphone (Info)", name: "phone", widget: "string", default: "+242 06 786 9231"}
