@@ -44,6 +44,7 @@ h2 {
 
 .text-rouge {
   color: var(--secondary-color);
+  font-size: 1.8rem;
 }
 
 body {
@@ -230,7 +231,7 @@ ul {
 .description {
   font-size: 2rem;
   margin-bottom: 2rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-weight: bold;
 }
 
