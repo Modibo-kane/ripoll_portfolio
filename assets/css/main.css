@@ -47,6 +47,10 @@ h2 {
   font-size: 1.8rem;
 }
 
+#accueilTitrePrincipale{
+  font-size: 0.8em;
+}
+
 body {
   font-family: "Gelasio", serif;
   background-color: var(--primary-color);
@@ -170,7 +174,7 @@ ul {
 
 .imgContenaire {
   width: 50%;
-  height: 65%;
+  height: 78%;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   position: relative;
@@ -229,9 +233,9 @@ ul {
 }
 
 .description {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   font-weight: bold;
 }
 
@@ -791,7 +795,7 @@ ul {
   width: 80%;
   background-color: #f9fafb; /* bg-gray-50 */
   margin-top: 1.5rem;
-  border-radius: 9999px;
+  border-radius: 20px;
   padding-inline: 1.5rem;
 }
 
@@ -799,8 +803,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-inline: auto;
 }
 

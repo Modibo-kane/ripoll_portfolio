@@ -43,6 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
     loadJsonData('_data/home.json', data => {
         updateTextContent('brand-name-desktop', data.brand_name);
         updateTextContent('brand-name-mobile', data.brand_name);
+
+        // Mise à jour de la section Accueil
+        updateTextContent('accueilTitrePrincipale', data.main_title);
+        updateTextContent('tagline', data.tagline);
+        updateHtmlContent('accueilDescription', data.home_description);
+        updateTextContent('labelNom', data.full_name);
+        updateTextContent('labelEmail', data.email);
+        updateTextContent('labelNumrero', data.phone);
+        updateTextContent('labelRegion', data.region);
+        updateImageSrc('profile-image', data.profile_image);
+        updateLinkHref('downloadPDF', data.cv_pdf);
+        updateLinkHref('downloadJPG', data.cv_jpg);
     });
 
     loadJsonData('_data/navigation.json', data => {
