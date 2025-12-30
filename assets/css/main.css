@@ -239,10 +239,9 @@ ul {
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   line-height: 2.5rem;
-  font-weight: bold;
 }
 
 .rectangleInfos {
