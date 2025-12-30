@@ -45,11 +45,11 @@ h2 {
 
 .text-rouge {
   color: var(--secondary-color);
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 #accueilTitrePrincipale{
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 body {
@@ -165,7 +165,7 @@ ul {
   justify-content: end;
   padding-right: 4rem;
   align-items: center;
-  width: 50%;
+  width: 40%;
 }
 
 .accueil-content {
@@ -175,7 +175,7 @@ ul {
   align-items: start;
   flex-direction: column;
   padding: 8rem;
-  width: 50%;
+  width: 60%;
 }
 
 .imgContenaire {
@@ -239,15 +239,14 @@ ul {
 }
 
 .description {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
   line-height: 2.5rem;
   font-weight: bold;
 }
 
 .rectangleInfos {
   background-color: var(--another-color);
-  padding: 0.5rem;
   border-radius: 10px;
   width: 100%;
   display: grid;
@@ -265,7 +264,7 @@ ul {
 }
 
 .btnCont {
-  margin-top: 2rem;
+  margin-top: 1rem;
   /* border: solid 2px var(--secondary-color); */
   width: fit-content;
   /* height: auto; */
