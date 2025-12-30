@@ -34,7 +34,7 @@ collections:
           - {label: "Email (Info & Contact)", name: "email", widget: "string", default: "ripollbis@gmail.com"}
           - {label: "Téléphone (Info)", name: "phone", widget: "string", default: "+242 06 786 9231"}
           - {label: "Région (Info)", name: "region", widget: "string", default: "Brazzaville, Congo"}
-          - {label: "Fichier CV (PDF)", name: "cv_pdf", widget: "file"}
+          - {label: "Fichier CV (PDF)", name: "cv_pdf", widget: "file", media_folder: "assets/docs", public_folder: "/assets/docs"}
           - {label: "Fichier CV (Image)", name: "cv_jpg", widget: "image"}
           - {label: "Image de Profil", name: "profile_image", widget: "image"}
 
