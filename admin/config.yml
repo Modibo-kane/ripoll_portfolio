@@ -7,6 +7,12 @@ backend:
 # Active le workflow éditorial : permet de réviser les changements avant publication
 publish_mode: editorial_workflow
 
+#-- 4 LIGNES POUR ÉVITER LES ERREURS DE LIENS
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 # ----------------------------------------------------------------------
 # NOUVELLE  CONFIGURATION REQUISE POUR LES IMAGES
 # ----------------------------------------------------------------------
