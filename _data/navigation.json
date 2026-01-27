@@ -6,16 +6,16 @@
       "url": "#accueil"
     },
     {
+      "text": "Projets",
+      "url": "#project"
+    },
+    {
       "text": "Services",
       "url": "#services-core"
     },
     {
       "text": "Outils",
       "url": "#outils"
-    },
-    {
-      "text": "Projets",
-      "url": "#project"
     }
   ]
 }
