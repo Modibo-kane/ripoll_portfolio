@@ -35,8 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateLinkHref = (elementId, href) => {
         const element = document.getElementById(elementId);
-        if (element) {
-            element.href = href;
+        if (element && href) {
+            // .trim() enlève les espaces accidentels au début ou à la fin
+            element.href = href.trim();
         }
     };
 
@@ -235,6 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateLinkHref('social-icon-twitter-footer', data.twitter_link);
         updateLinkHref('social-icon-facebook-footer', data.facebook_link);
         updateLinkHref('social-icon-linkedin-footer', data.linkedin_link);
+        updateLinkHref('social-icon-whatsapp-footer', data.whatsapp_channel_link);
 
         const footerLinksNav = document.getElementById('footer-links-nav');
         if (data.footer_links && footerLinksNav) {
