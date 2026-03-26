@@ -1,6 +1,8 @@
 {
   "button_text": "Demander ce service",
   "title": "Dévéloppement web/mobile",
-  "order": 3,
-  "image": "/assets/image/devweb.jpg"
+  "order": 1,
+  "image": "/assets/image/devweb.jpg",
+  "category": "Partenaire",
+  "sub_category": "Numérique"
 }

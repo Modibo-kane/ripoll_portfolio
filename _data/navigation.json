@@ -6,16 +6,20 @@
       "url": "#accueil"
     },
     {
-      "text": "Service",
-      "url": "#services"
+      "text": "Projets",
+      "url": "#project"
+    },
+    {
+      "text": "Services",
+      "url": "#services-core"
     },
     {
       "text": "Skills",
       "url": "#skills"
     },
     {
-      "text": "Projet",
-      "url": "#project"
+      "text": "Réseau de Partenaires ",
+      "url": "#services-partners"
     }
   ]
 }

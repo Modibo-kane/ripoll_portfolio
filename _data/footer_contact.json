@@ -1,5 +1,6 @@
 {
-  "made_with_url": "#",
+  "made_with_url": "https://modibokaneporfolio.vercel.app/",
+  "whatsapp_channel_link": "https://www.whatsapp.com/channel/0029VbBmYXRAYIUAuGSVWd3A",
   "twitter_link": "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA",
   "social_title": "Suivez-moi",
   "copyright": "&copy; Ripoll. Tous droits réservés.",
@@ -8,7 +9,8 @@
   "newsletter_placeholder": "Votre adresse email",
   "whatsapp_description": "Remplissez les champs ci-dessous pour générer votre message personnalisé.",
   "newsletter_title": "Rejoignez ma newsletter",
-  "footer_title": "Ripoll",
+  "facebook_link": "https://www.facebook.com/share/1B2nbxWwrM/?mibextid=wwXlfr",
+  "footer_title": "Ripoll Darcia",
   "footer_links": [
     {
       "text": "Accueil",
@@ -30,6 +32,6 @@
   "contact_title": "Ripoll Darcia",
   "linkedin_link": "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/",
   "nav_title": "Navigation",
-  "made_with_text": "Made with ❤️ Modibo Kané",
-  "contact_description": "<strong>Stratège de contenus et Performance Web</strong> \" L'oeil stratégique derrière votre présence digitale\""
+  "made_with_text": "Made by Modibo Kané",
+  "contact_description": "<strong>Communication digitale & Médias | Community Manager | Stratège de contenus web</strong> "
 }

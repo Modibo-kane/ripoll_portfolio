@@ -194,6 +194,7 @@
 
     .serviceName {
         font-size: 1.8rem;
+        white-space: normal;
     }
 
     .serviceButton {
@@ -507,4 +508,3 @@
 }
 
 /* Extra-small screens (smartphones, etc. | max-width: 480px) */
-

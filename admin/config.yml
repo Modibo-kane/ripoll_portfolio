@@ -7,8 +7,14 @@ backend:
 # Active le workflow éditorial : permet de réviser les changements avant publication
 publish_mode: editorial_workflow
 
+#-- 4 LIGNES POUR ÉVITER LES ERREURS DE LIENS
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 # ----------------------------------------------------------------------
-# NOUVELLE CONFIGURATION REQUISE POUR LES IMAGES
+# NOUVELLE  CONFIGURATION REQUISE POUR LES IMAGES
 # ----------------------------------------------------------------------
 # 1. Où les fichiers seront stockés dans votre dépôt
 media_folder: "assets/image" 
@@ -28,15 +34,15 @@ collections:
         fields:
           - {label: "Nom de la marque (Header)", name: "brand_name", widget: "string", default: "Ripoll Darcia"}
           - {label: "Titre principal (H1)", name: "main_title", widget: "string", default: "Darcia Ripoll"}
-          - {label: "Slogan / Sous-titre", name: "tagline", widget: "string", default: "| Stratège de Contenus & Performance Web"}
-          - {label: "Description d'accueil", name: "home_description", widget: "markdown", default: "Obtenez un service web qui marquera durablement les esprits de votre public !"}
+          - {label: "Slogan / Sous-titre", name: "tagline", widget: "string", default: "| Chargé de Communication Digitale & Médias"}
+          - {label: "Description d'accueil", name: "home_description", widget: "markdown", default: "Réseaux Sociaux, Site web, Campagnes Ads & Newsletter"}
           - {label: "Nom complet (Info)", name: "full_name", widget: "string", default: "Darcia Ripoll"}
           - {label: "Email (Info & Contact)", name: "email", widget: "string", default: "ripollbis@gmail.com"}
           - {label: "Téléphone (Info)", name: "phone", widget: "string", default: "+242 06 786 9231"}
           - {label: "Région (Info)", name: "region", widget: "string", default: "Brazzaville, Congo"}
-          - {label: "Fichier CV (PDF)", name: "cv_pdf", widget: "file", media_folder: "assets/docs"}
-          - {label: "Fichier CV (Image)", name: "cv_jpg", widget: "file", media_folder: "assets/image"}
-          - {label: "Image de Profil", name: "profile_image", widget: "image", media_folder: "assets/image"}
+          - {label: "Fichier CV (PDF)", name: "cv_pdf", widget: "file", media_folder: "assets/docs", public_folder: "/assets/docs"}
+          - {label: "Fichier CV (Image)", name: "cv_jpg", widget: "image"}
+          - {label: "Image de Profil", name: "profile_image", widget: "image"}
 
   - label: "Navigation"
     name: "navigation"
@@ -82,6 +88,13 @@ collections:
           - {label: "Titre Section Services", name: "service_title", widget: "string", default: "Mes Services"}
           - {label: "Sous-titre Section Services", name: "service_subtitle", widget: "string", default: "Stratégiques"}
           - {label: "Description Section Services", name: "service_description", widget: "markdown", default: "Description par défaut des services."}
+          - {label: "Titre Sous-section Expertise", name: "core_title", widget: "string", default: "Mon Expertise"}
+          - {label: "Description Sous-section Expertise", name: "core_desc", widget: "string", default: "Ce que je réalise pour vous."}
+          - {label: "Titre Section Partenaires", name: "partner_main_title", widget: "string", default: "Services Partenaires"}
+          - {label: "Sous-titre Section Partenaires", name: "partner_main_subtitle", widget: "string", default: "Collaborations"}
+          - {label: "Description Section Partenaires", name: "partner_main_desc", widget: "markdown", default: "Description globale partenaires."}
+          - {label: "Titre Sous-section Numérique", name: "partner_digital_title", widget: "string", default: "Services Numériques"}
+          - {label: "Description Sous-section Numérique", name: "partner_digital_desc", widget: "string", default: "Dev, Finance, SEO..."}
 
   - label: "Section Outils"
     name: "skills"
@@ -108,8 +121,22 @@ collections:
     slug: "{{slug}}"         # Utilise le titre pour générer le nom du fichier
     extension: "json"        # Indique que les fichiers sont au format JSON
     identifier_field: "title"  # Utilise le champ 'title' pour afficher le nom dans la liste
+    summary: "{{title}} [{{category}} - {{sub_category}}]" # Affiche la catégorie dans la liste
+    view_groups:
+      - label: "Par Catégorie"
+        field: "category"
     fields:
       - {label: "Titre du Service", name: "title", widget: "string"}
+      - label: "Catégorie du Service"
+        name: "category"
+        widget: "select"
+        options: ["Expertise", "Partenaire"]
+        default: "Expertise"
+      - label: "Sous-service (Si Partenaire)"
+        name: "sub_category"
+        widget: "select"
+        options: ["Numérique"]
+        required: false
       - {label: "Ordre d'affichage", name: "order", widget: "number", default: 10}
       - {label: "Image du Service", name: "image", widget: "image"}
       - {label: "Texte du bouton", name: "button_text", widget: "string", default: "Demander ce service"}
@@ -136,6 +163,8 @@ collections:
           - {label: "Titre Colonne Social", name: "social_title", widget: "string", default: "Suivez-nous"}
           - {label: "Lien Twitter", name: "twitter_link", widget: "string", default: "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA"}
           - {label: "Lien LinkedIn", name: "linkedin_link", widget: "string", default: "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/"}
+          - {label: "Lien Facebook", name: "facebook_link", widget: "string", default: "https://www.facebook.com/share/1B2nbxWwrM/?mibextid=wwXlfr"}
+          - {label: "Lien Chaîne WhatsApp", name: "whatsapp_channel_link", widget: "string", default: "https://www.whatsapp.com/channel/0029VbBmYXRAYIUAuGSVWd3A"}
           - {label: "Titre Colonne Newsletter", name: "newsletter_title", widget: "string", default: "Rejoignez ma newsletter"}
           - {label: "Placeholder Newsletter", name: "newsletter_placeholder", widget: "string", default: "Votre adresse email"}
           - {label: "Copyright", name: "copyright", widget: "string", default: "&copy; Ripoll. Tous droits réservés."}
@@ -143,5 +172,5 @@ collections:
           - {label: "Description Contact (WhatsApp)", name: "whatsapp_description", widget: "string", default: "Remplissez les champs ci-dessous pour générer votre message personnalisé."}
           - {label: "Titre Contact (Réseaux)", name: "contact_title", widget: "string", default: "Ripoll Darcia"}
           - {label: "Description Contact (Réseaux)", name: "contact_description", widget: "string", default: "<strong>Stratège de contenus et Performance Web</strong> \" L'oeil stratégique derrière votre présence digitale\""}
-          - {label: "Texte du lien 'Made with'", name: "made_with_text", widget: "string", default: "Made with love ❤️ Modibo Kané"}
+          - {label: "Texte du lien 'Made with'", name: "made_with_text", widget: "string", default: "Made by Modibo Kané"}
           - {label: "URL du lien 'Made with'", name: "made_with_url", widget: "string", default: "#"}

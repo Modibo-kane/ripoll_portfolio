@@ -12,6 +12,14 @@
         color: #1a202c;
     }
 
+.text-rouge{
+    font-size:1.7rem;
+}
+    
+#accueilTitrePrincipale{
+    font-size:1.2em;
+}
+
     .px-4{
         display: flex;
         justify-content: space-between;
@@ -92,14 +100,13 @@
     }
 
     .description {
-        font-size: 1.5rem; 
+        font-size: 1rem; 
         line-height: 1.8rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .rectangleInfos {
-        grid-template-columns: 1fr; 
-        gap: 1rem;
+        grid-template-columns: 1fr;
     }
 
     .btnCont {
@@ -177,12 +184,34 @@
     }
     .serviceBox {
         flex-shrink: 0; 
-        flex-basis: 65vw;
+        flex-basis: 60vw;
+        width: 16rem;
         /* height: 100%; */ /* On retire la hauteur fixe qui cause le problème */
         height: 250px; /* On donne une hauteur fixe comme sur desktop */
         display: flex; /* Assure que le contenu est bien géré par flexbox */
         position: relative; /* Indispensable pour le positionnement absolu de l'enfant */
     }
+
+    .serviceButton{
+        font-size:0.8rem; 
+    }
+
+    .serviceName{
+        font-size: 0.8rem;
+        white-space: normal;
+    }
+
+    .serviceGridCore{
+        padding-block: 1rem;
+        padding-inline: 1rem;
+    }
+
+
+/* .partnerCont -------------------------------------------------------------------- */
+
+.partnerCont{
+    padding-inline: 2rem;
+}
 
 /* skills -------------------------------------------------------------------------- */
 
@@ -401,24 +430,4 @@
         font-size: 1rem;
     }
 
-}
-
-/* responsive recommendations section */
-#recommendations .skillsGrid {
-    padding-block: 1rem;
-}
-
-#recommendations .recommendation-card-link {
-    flex-shrink: 0;
-    flex-basis: 70vw; /* A bit wider to accommodate more text */
-}
-
-#recommendations .skillBox {
-    height: auto; /* Let the height grow with the content */
-    min-height: 250px; /* Maintain a minimum height for consistency */
-    justify-content: flex-start; /* Align content to the top */
-}
-
-#recommendations .recommendation-description {
-    white-space: normal; /* Allow text to wrap */
 }

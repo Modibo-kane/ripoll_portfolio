@@ -1,6 +1,7 @@
 {
   "title": "Création de Contenus",
-  "order": 1,
+  "order": 2,
   "image": "/assets/image/contenu.jpg",
-  "button_text": "Demander ce service"
+  "button_text": "Demander ce service",
+  "category": "Expertise"
 }

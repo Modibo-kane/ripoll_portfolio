@@ -1,5 +1,5 @@
 {
-  "project_description": "La preuve est dans la performance. Chaque projet présenté ici est le résultat d'une stratégie de contenus sur mesure, transformée en une solution web concrète. Découvrez comment j'ai aidé ces entreprises à optimiser leur présence en ligne et à atteindre leurs objectifs de croissance. ",
+  "project_description": "La preuve est dans la performance ! Chaque projet présenté ici est le résultat d'une stratégie de contenus sur mesure, transformée en une solution web concrète. Découvrez comment j'ai aidé ces entreprises à optimiser leur présence en ligne et à atteindre leurs objectifs de croissance.",
   "project_title": " Mes Projets",
   "project_subtitle": " Clients Réalisés",
   "project_categories": [
@@ -7,26 +7,26 @@
       "title": "Mamy-Délices, Patisserie-Glacier (Bamako)",
       "images": [
         {
-          "image": "/assets/image/mamydelice (19).jpeg",
-          "name": "Projet Mamy-Délices 1",
-          "button_text": "Je veux le même",
-          "button_link": "#"
-        },
-        {
-          "image": "/assets/image/mamydelice (11).jpeg",
-          "name": "Projet Mamy-Délices 2",
+          "image": "/assets/image/mamydelice (17).jpeg",
+          "name": "Mamy-Délices ",
           "button_text": "Je veux le même",
           "button_link": "#"
         },
         {
           "image": "/assets/image/mamydelice (2).jpeg",
-          "name": "Projet Mamy-Délices 3",
+          "name": "Mamy-Délices ",
           "button_text": "Je veux le même",
           "button_link": "#"
         },
         {
-          "image": "/assets/image/mamydelice (17).jpeg",
-          "name": "Projet Mamy-Délices 4",
+          "image": "/assets/image/mamydelice (12).jpeg",
+          "name": "Mamy-Délices ",
+          "button_text": "Je veux le même",
+          "button_link": "#"
+        },
+        {
+          "image": "/assets/image/mamydelice (6).jpeg",
+          "name": "Mamy-Délices",
           "button_text": "Je veux le même",
           "button_link": "#"
         }
@@ -37,27 +37,27 @@
       "images": [
         {
           "image": "/assets/image/lemarchand_4.jpeg",
-          "name": "Zapetti Sauce Pizza",
+          "name": "LeMarchand",
           "button_text": "Je veux le même",
           "button_link": "#"
         },
         {
-          "name": "Malizia Mousse de bain ",
+          "name": "LeMarchand",
           "button_text": "Je veux le même",
           "button_link": "#",
           "image": "/assets/image/lemarchand_3.jpeg"
         },
         {
-          "name": "Chicorée",
+          "name": "LeMarchand",
           "button_text": "Je veux le même",
           "button_link": "#",
           "image": "/assets/image/lemarchand_2.jpeg"
         },
         {
-          "name": "Kelloggs",
+          "name": "LeMarchand",
           "button_text": "Je veux le même",
           "button_link": "#",
-          "image": "/assets/image/lemarchand_1.jpeg"
+          "image": "/assets/image/lemarchand_5.jpeg"
         }
       ]
     },
@@ -66,27 +66,27 @@
       "images": [
         {
           "image": "/assets/image/dfa4.jpeg",
-          "name": "Projet DFA-Communication 1",
+          "name": "Conseil National du Patronat du Mali (CNPM)",
           "button_text": "Je veux le même",
           "button_link": "#"
         },
         {
-          "name": "Nom du projet",
+          "name": "Conseil National du Patronat du Mali (CNPM)",
+          "button_text": "Je veux le même",
+          "button_link": "#",
+          "image": "/assets/image/dfa1.jpeg"
+        },
+        {
+          "name": "Conseil National du Patronat du Mali (CNPM)",
           "button_text": "Je veux le même",
           "button_link": "#",
           "image": "/assets/image/dfa7.jpeg"
         },
         {
-          "name": "Nom du projet",
+          "name": "Conseil National du Patronat du Mali (CNPM)",
           "button_text": "Je veux le même",
           "button_link": "#",
           "image": "/assets/image/dfa3.jpeg"
-        },
-        {
-          "name": "Nom du projet",
-          "button_text": "Je veux le même",
-          "button_link": "#",
-          "image": "/assets/image/dfa1.jpeg"
         }
       ]
     }

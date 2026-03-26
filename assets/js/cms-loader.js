@@ -35,14 +35,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateLinkHref = (elementId, href) => {
         const element = document.getElementById(elementId);
-        if (element) {
-            element.href = href;
+        if (element && href) {
+            // .trim() enlève les espaces accidentels au début ou à la fin
+            element.href = href.trim();
         }
     };
 
     loadJsonData('_data/home.json', data => {
         updateTextContent('brand-name-desktop', data.brand_name);
         updateTextContent('brand-name-mobile', data.brand_name);
+
+        // Mise à jour de la section Accueil
+        updateTextContent('accueilTitrePrincipale', data.main_title);
+        updateTextContent('tagline', data.tagline);
+        updateHtmlContent('accueilDescription', data.home_description);
+        updateTextContent('labelNom', data.full_name);
+        updateTextContent('labelEmail', data.email);
+        updateTextContent('labelNumrero', data.phone);
+        updateTextContent('labelRegion', data.region);
+        updateImageSrc('profile-image', data.profile_image);
+        updateLinkHref('downloadPDF', data.cv_pdf);
+        updateLinkHref('downloadJPG', data.cv_jpg);
     });
 
     loadJsonData('_data/navigation.json', data => {
@@ -114,15 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
             // on appelle la fonction qui attache les effets de survol.
             if (typeof initializeProjectHoverEffects === 'function') {
                 initializeProjectHoverEffects();
-            }
+            } 
         }
     });
 
     // Charge les services depuis le fichier JSON combiné
     loadJsonData('_data/services-combined.json', services => {
-        const serviceGrid = document.getElementById('service-grid');
-        if (services && serviceGrid) {
-            services.forEach(service => {
+        const coreGrid = document.getElementById('core-services-grid');
+        const partnerDigitalGrid = document.getElementById('partner-digital-grid');
+
+        if (services) {
+            // Fonction pour créer une carte de service
+            const createServiceCard = (service) => {
                 const serviceBox = document.createElement('div');
                 serviceBox.className = 'serviceBox';
                 serviceBox.innerHTML = `
@@ -131,7 +147,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 class="serviceName">${service.title}</h3>
                         <span class="serviceButton talk">${service.button_text || 'Demander ce service'}</span>
                     </div>`;
-                serviceGrid.appendChild(serviceBox);
+                return serviceBox;
+            };
+
+            services.forEach(service => {
+                // Logique de tri basée sur la nouvelle configuration
+                let category = service.category ? service.category.toLowerCase() : 'expertise';
+                let subCategory = service.sub_category ? service.sub_category.toLowerCase() : '';
+
+                // Compatibilité avec l'ancienne configuration (au cas où)
+                if (category === 'partenaire_numerique') { category = 'partenaire'; subCategory = 'numérique'; }
+                if (category === 'partenaire_autre') { category = 'partenaire'; subCategory = 'autre'; }
+                
+                if (category === 'partenaire') {
+                    if (partnerDigitalGrid) partnerDigitalGrid.appendChild(createServiceCard(service));
+                } else if (coreGrid) {
+                    // Fallback: si c'est 'expertise' ou l'ancien tag 'partenaire' (au cas où), on met dans core ou on adapte
+                    // Ici on assume que 'expertise' va dans core.
+                    coreGrid.appendChild(createServiceCard(service));
+                }
             });
 
             // Initialiser les effets de survol une fois tout chargé
@@ -145,6 +179,14 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTextContent('serviceTitrePrincipale', data.service_title);
         updateTextContent('span-service', data.service_subtitle);
         updateHtmlContent('service-description', data.service_description);
+        updateTextContent('core-services-desc', data.core_desc);
+        
+        updateTextContent('partner-main-title', data.partner_main_title);
+        updateTextContent('partner-main-subtitle', data.partner_main_subtitle);
+        updateHtmlContent('partner-main-desc', data.partner_main_desc);
+        
+        updateTextContent('partner-digital-title', data.partner_digital_title);
+        updateTextContent('partner-digital-desc', data.partner_digital_desc);
     });
 
     loadJsonData('_data/skills.json', data => {
@@ -185,7 +227,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         updateLinkHref('social-icon-twitter-footer', data.twitter_link);
+        updateLinkHref('social-icon-facebook-footer', data.facebook_link);
         updateLinkHref('social-icon-linkedin-footer', data.linkedin_link);
+        updateLinkHref('social-icon-whatsapp-footer', data.whatsapp_channel_link);
 
         const footerLinksNav = document.getElementById('footer-links-nav');
         if (data.footer_links && footerLinksNav) {
