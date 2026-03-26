@@ -593,15 +593,6 @@ ul {
   max-width: 600px;
 }
 
-.service-divider {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--secondary-color), rgba(255, 255, 255, 0));
-  margin: 1rem 0 3rem 0;
-  width: 60%;
-  opacity: 0.5;
-}
-
 .serviceGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

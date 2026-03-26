@@ -135,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadJsonData('_data/services-combined.json', services => {
         const coreGrid = document.getElementById('core-services-grid');
         const partnerDigitalGrid = document.getElementById('partner-digital-grid');
-        const partnerOtherGrid = document.getElementById('partner-other-grid');
 
         if (services) {
             // Fonction pour créer une carte de service
@@ -161,11 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (category === 'partenaire_autre') { category = 'partenaire'; subCategory = 'autre'; }
                 
                 if (category === 'partenaire') {
-                    if (subCategory === 'autre' && partnerOtherGrid) {
-                        partnerOtherGrid.appendChild(createServiceCard(service));
-                    } else if (partnerDigitalGrid) {
-                        partnerDigitalGrid.appendChild(createServiceCard(service));
-                    }
+                    if (partnerDigitalGrid) partnerDigitalGrid.appendChild(createServiceCard(service));
                 } else if (coreGrid) {
                     // Fallback: si c'est 'expertise' ou l'ancien tag 'partenaire' (au cas où), on met dans core ou on adapte
                     // Ici on assume que 'expertise' va dans core.
@@ -192,8 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         updateTextContent('partner-digital-title', data.partner_digital_title);
         updateTextContent('partner-digital-desc', data.partner_digital_desc);
-        updateTextContent('partner-other-title', data.partner_other_title);
-        updateTextContent('partner-other-desc', data.partner_other_desc);
     });
 
     loadJsonData('_data/skills.json', data => {
