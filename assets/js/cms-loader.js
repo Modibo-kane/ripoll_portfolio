@@ -229,7 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateLinkHref('social-icon-twitter-footer', data.twitter_link);
         updateLinkHref('social-icon-facebook-footer', data.facebook_link);
         updateLinkHref('social-icon-linkedin-footer', data.linkedin_link);
-        updateLinkHref('social-icon-whatsapp-footer', data.whatsapp_channel_link);
 
         const footerLinksNav = document.getElementById('footer-links-nav');
         if (data.footer_links && footerLinksNav) {
