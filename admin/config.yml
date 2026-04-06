@@ -164,7 +164,6 @@ collections:
           - {label: "Lien Twitter", name: "twitter_link", widget: "string", default: "https://x.com/ripolldarcia?s=21&t=mbnATlyMktibWIlfyQgrAA"}
           - {label: "Lien LinkedIn", name: "linkedin_link", widget: "string", default: "https://www.linkedin.com/in/ripoll-darcia-%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-391700192/"}
           - {label: "Lien Facebook", name: "facebook_link", widget: "string", default: "https://www.facebook.com/share/1B2nbxWwrM/?mibextid=wwXlfr"}
-          - {label: "Lien Chaîne WhatsApp", name: "whatsapp_channel_link", widget: "string", default: "https://www.whatsapp.com/channel/0029VbBmYXRAYIUAuGSVWd3A"}
           - {label: "Titre Colonne Newsletter", name: "newsletter_title", widget: "string", default: "Rejoignez ma newsletter"}
           - {label: "Placeholder Newsletter", name: "newsletter_placeholder", widget: "string", default: "Votre adresse email"}
           - {label: "Copyright", name: "copyright", widget: "string", default: "&copy; Ripoll. Tous droits réservés."}
