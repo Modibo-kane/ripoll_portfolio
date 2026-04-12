@@ -170,6 +170,6 @@ collections:
           - {label: "Titre Contact (WhatsApp)", name: "whatsapp_title", widget: "string", default: "Contactez-moi sur"}
           - {label: "Description Contact (WhatsApp)", name: "whatsapp_description", widget: "string", default: "Remplissez les champs ci-dessous pour générer votre message personnalisé."}
           - {label: "Titre Contact (Réseaux)", name: "contact_title", widget: "string", default: "Ripoll Darcia"}
-          - {label: "Description Contact (Réseaux)", name: "contact_description", widget: "string", default: "<strong>Stratège de contenus et Performance Web</strong> \" L'oeil stratégique derrière votre présence digitale\""}
+          - {label: "Description Contact (Réseaux)", name: "contact_description", widget: "string", default: "Parténaire Stratégique pour votre visibilité digital et médiatique"}
           - {label: "Texte du lien 'Made with'", name: "made_with_text", widget: "string", default: "Made by Modibo Kané"}
           - {label: "URL du lien 'Made with'", name: "made_with_url", widget: "string", default: "#"}
